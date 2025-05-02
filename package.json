@@ -22,5 +22,18 @@
       "require": "./dist/models/index.js",
       "types": "./dist/models/index.d.ts"
     }
+  },
+  "typesVersions": {
+    "*": {
+      "models": [
+        "dist/models/index.d.ts"
+      ],
+      "mappers": [
+        "dist/mappers/index.d.ts"
+      ],
+      "*": [
+        "dist/index.d.ts"
+      ]
+    }
   }
 }
