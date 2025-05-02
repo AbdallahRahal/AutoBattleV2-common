@@ -1,7 +1,7 @@
 import { Item } from "./item";
 import { StatRecord } from "./stat";
 export declare enum ClassName {
-    Elementalist = "Elementalist",
+    Arcanist = "Arcanist",
     Scout = "Scout",
     Guard = "Guard"
 }
