@@ -5,6 +5,7 @@ export declare enum ClassName {
     Scout = "Scout",
     Guard = "Guard"
 }
+export type ClassRecord = Record<ClassName, number>;
 export interface Character {
     id: string;
     ownerId: string;
@@ -12,7 +13,7 @@ export interface Character {
     level: number;
     experience: number;
     stats: StatRecord;
-    classPoints: Partial<Record<ClassName, number>>;
+    class: ClassRecord;
     items: Item[];
     modelName: string;
     duelsLeft: number;
