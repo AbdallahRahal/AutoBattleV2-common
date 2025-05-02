@@ -13,7 +13,7 @@ export interface Character {
     experience: number;
     stats: StatRecord;
     classPoints: Partial<Record<ClassName, number>>;
-    equippedItems: Item[];
+    items: Item[];
     modelName: string;
     duelsLeft: number;
 }
