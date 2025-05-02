@@ -6,7 +6,7 @@ export enum ClassName {
     Scout = "Scout",
     Guard = "Guard",
 }
-export type ClassNameRecord = Record<ClassName, number>;
+export type ClassRecord = Record<ClassName, number>;
 
 export interface Character {
     id: string;
@@ -18,7 +18,7 @@ export interface Character {
     experience: number;
 
     stats: StatRecord;
-    classPoints: ClassNameRecord; // Exemple → { Mage: 3, Warrior: 1 }
+    class: ClassRecord; // Exemple → { Mage: 3, Warrior: 1 }
     items: Item[];
 
     modelName: string;
