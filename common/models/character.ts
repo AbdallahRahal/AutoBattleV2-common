@@ -1,7 +1,13 @@
-import { ClassName } from "./className";
 import { Item } from "./item";
 import { StatRecord } from "./stat";
 
+export enum ClassName {
+    // Vampire = "Vampire",
+    // Invoker = "Invoker",
+    Elementalist = "Elementalist",
+    Scout = "Scout",
+    Guard = "Guard",
+}
 export interface Character {
     id: string;
 
