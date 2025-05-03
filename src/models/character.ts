@@ -32,8 +32,6 @@ export interface Character {
 
 export function getInitialAndItemsClass(character: Character): ClassRecord {
     const finalClass: ClassRecord = { ...character.baseClass };
-    console.log("base classe = ", finalClass)
-    console.log("items 1 = ", character.items[0])
 
     for (const item of character.items) {
         (Object.keys(finalClass) as ClassName[]).forEach((key) => {

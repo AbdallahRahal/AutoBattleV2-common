@@ -9,8 +9,6 @@ var ClassName;
 })(ClassName || (exports.ClassName = ClassName = {}));
 function getInitialAndItemsClass(character) {
     const finalClass = { ...character.baseClass };
-    console.log("base classe = ", finalClass);
-    console.log("items 1 = ", character.items[0]);
     for (const item of character.items) {
         Object.keys(finalClass).forEach((key) => {
             const itemStatValue = item.class[key] ?? 0;
