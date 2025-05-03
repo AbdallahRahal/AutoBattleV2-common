@@ -7,10 +7,11 @@ var ClassName;
     ClassName["Scout"] = "Scout";
     ClassName["Guard"] = "Guard";
 })(ClassName || (exports.ClassName = ClassName = {}));
-function getInitialAndItemsClass(character, items) {
+function getInitialAndItemsClass(character) {
     const finalClass = { ...character.baseClass };
     console.log("base classe = ", finalClass);
-    for (const item of items) {
+    console.log("items 1 = ", character.items[0]);
+    for (const item of character.items) {
         Object.keys(finalClass).forEach((key) => {
             const itemStatValue = item.class[key] ?? 0;
             finalClass[key] += itemStatValue;
@@ -19,9 +20,9 @@ function getInitialAndItemsClass(character, items) {
     return finalClass;
 }
 exports.getInitialAndItemsClass = getInitialAndItemsClass;
-function getInitialAndItemsStat(character, items) {
+function getInitialAndItemsStat(character) {
     const finalStats = { ...character.baseStats };
-    for (const item of items) {
+    for (const item of character.items) {
         Object.keys(finalStats).forEach((key) => {
             const itemStatValue = item.stats[key] ?? 0;
             finalStats[key] += itemStatValue;

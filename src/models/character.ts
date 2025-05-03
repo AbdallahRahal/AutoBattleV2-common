@@ -30,11 +30,12 @@ export interface Character {
 }
 
 
-export function getInitialAndItemsClass(character: Character, items: Item[]): ClassRecord {
+export function getInitialAndItemsClass(character: Character): ClassRecord {
     const finalClass: ClassRecord = { ...character.baseClass };
     console.log("base classe = ", finalClass)
+    console.log("items 1 = ", character.items[0])
 
-    for (const item of items) {
+    for (const item of character.items) {
         (Object.keys(finalClass) as ClassName[]).forEach((key) => {
             const itemStatValue = item.class[key] ?? 0;
             finalClass[key] += itemStatValue;
@@ -44,10 +45,10 @@ export function getInitialAndItemsClass(character: Character, items: Item[]): Cl
     return finalClass;
 }
 
-export function getInitialAndItemsStat(character: Character, items: Item[]): StatRecord {
+export function getInitialAndItemsStat(character: Character): StatRecord {
     const finalStats: StatRecord = { ...character.baseStats };
 
-    for (const item of items) {
+    for (const item of character.items) {
         (Object.keys(finalStats) as StatKey[]).forEach((key) => {
             const itemStatValue = item.stats[key] ?? 0;
             finalStats[key] += itemStatValue;
