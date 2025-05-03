@@ -25,3 +25,17 @@ export interface Character {
     modelName: string;
     duelsLeft: number;
 }
+
+
+export function getInitialAndItemsClass(initialClass: ClassRecord, items: Item[]): ClassRecord {
+    const finalClass: ClassRecord = { ...initialClass };
+
+    for (const item of items) {
+        (Object.keys(finalClass) as ClassName[]).forEach((key) => {
+            const itemStatValue = item.class[key] ?? 0;
+            finalClass[key] += itemStatValue;
+        });
+    }
+
+    return finalClass;
+}

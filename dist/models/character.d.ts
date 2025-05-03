@@ -18,3 +18,4 @@ export interface Character {
     modelName: string;
     duelsLeft: number;
 }
+export declare function getInitialAndItemsClass(initialClass: ClassRecord, items: Item[]): ClassRecord;
