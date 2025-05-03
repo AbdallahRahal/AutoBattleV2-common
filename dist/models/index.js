@@ -18,3 +18,4 @@ __exportStar(require("./character"), exports);
 __exportStar(require("./fight"), exports);
 __exportStar(require("./item"), exports);
 __exportStar(require("./stat"), exports);
+__exportStar(require("./leveling"), exports);
