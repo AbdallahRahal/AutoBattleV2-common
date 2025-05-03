@@ -1,5 +1,5 @@
 import { Item } from "./item";
-import { StatRecord } from "./stat";
+import { StatKey, StatRecord } from "./stat";
 
 export enum ClassName {
     Arcanist = "Arcanist",
@@ -18,6 +18,10 @@ export interface Character {
     level: number;
     experience: number;
 
+
+    baseStats: StatRecord;
+    baseClass: ClassRecord;
+
     stats: StatRecord;
     class: ClassRecord;
     items: Item[];
@@ -27,8 +31,8 @@ export interface Character {
 }
 
 
-export function getInitialAndItemsClass(initialClass: ClassRecord, items: Item[]): ClassRecord {
-    const finalClass: ClassRecord = { ...initialClass };
+export function getInitialAndItemsClass(character: Character, items: Item[]): ClassRecord {
+    const finalClass: ClassRecord = { ...character.baseClass };
 
     for (const item of items) {
         (Object.keys(finalClass) as ClassName[]).forEach((key) => {
@@ -38,4 +42,17 @@ export function getInitialAndItemsClass(initialClass: ClassRecord, items: Item[]
     }
 
     return finalClass;
+}
+
+export function getInitialAndItemsStat(character: Character, items: Item[]): StatRecord {
+    const finalStats: StatRecord = { ...character.baseStats };
+
+    for (const item of items) {
+        (Object.keys(finalStats) as StatKey[]).forEach((key) => {
+            const itemStatValue = item.stats[key] ?? 0;
+            finalStats[key] += itemStatValue;
+        });
+    }
+
+    return finalStats;
 }

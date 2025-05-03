@@ -12,10 +12,13 @@ export interface Character {
     name: string;
     level: number;
     experience: number;
+    baseStats: StatRecord;
+    baseClass: ClassRecord;
     stats: StatRecord;
     class: ClassRecord;
     items: Item[];
     modelName: string;
     duelsLeft: number;
 }
-export declare function getInitialAndItemsClass(initialClass: ClassRecord, items: Item[]): ClassRecord;
+export declare function getInitialAndItemsClass(character: Character, items: Item[]): ClassRecord;
+export declare function getInitialAndItemsStat(character: Character, items: Item[]): StatRecord;
