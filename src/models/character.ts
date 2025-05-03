@@ -22,8 +22,7 @@ export interface Character {
     baseStats: StatRecord;
     baseClass: ClassRecord;
 
-    stats: StatRecord;
-    class: ClassRecord;
+
     items: Item[];
 
     modelName: string;
