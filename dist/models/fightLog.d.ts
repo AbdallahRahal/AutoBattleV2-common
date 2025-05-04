@@ -26,6 +26,7 @@ export interface FighterState {
     modelName: string;
     maxLifePoint: number;
     actualLifePoint: number;
+    isDead: boolean;
 }
 export interface SpellPerformedLog extends CombatLog {
     type: "SpellPerformed";
