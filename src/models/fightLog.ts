@@ -34,7 +34,7 @@ export interface FighterState {
 
     maxLifePoint: number;
     actualLifePoint: number;
-    isDead: boolean
+    isAlive: boolean
 }
 
 export interface SpellPerformedLog extends CombatLog {
