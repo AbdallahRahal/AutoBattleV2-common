@@ -17,6 +17,7 @@ export interface TeamsState {
     members: FighterState[];
 }
 export interface FighterState {
+    id: string;
     name: string;
     level: number;
     stats: StatRecord;

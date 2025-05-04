@@ -24,6 +24,7 @@ export interface TeamsState {
 }
 
 export interface FighterState {
+    id: string;
     name: string;
     level: number;
     stats: StatRecord;
