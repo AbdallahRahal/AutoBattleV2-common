@@ -32,6 +32,7 @@ export interface FighterState {
     items: Item[];
     modelName: string;
 
+    maxLifePoint: number;
     actualLifePoint: number;
 }
 

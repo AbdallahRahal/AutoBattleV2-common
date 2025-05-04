@@ -24,6 +24,7 @@ export interface FighterState {
     class: ClassRecord;
     items: Item[];
     modelName: string;
+    maxLifePoint: number;
     actualLifePoint: number;
 }
 export interface SpellPerformedLog extends CombatLog {
