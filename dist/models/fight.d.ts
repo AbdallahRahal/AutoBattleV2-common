@@ -9,7 +9,7 @@ export interface Fight {
     winnerTeamId: string;
     containerId: string;
     fightTime: number;
-    createdAt: string;
+    createdAt: Date;
 }
 export interface FightTeam {
     teamId: string;
