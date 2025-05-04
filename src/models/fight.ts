@@ -11,6 +11,7 @@ export interface Fight {
     containerId: string
     fightTime: number
     createdAt: Date
+    background: String
 }
 
 export interface FightTeam {
