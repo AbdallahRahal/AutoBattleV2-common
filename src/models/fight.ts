@@ -10,6 +10,7 @@ export interface Fight {
     winnerTeamId: string
     containerId: string
     fightTime: number
+    createdAt: string
 }
 
 export interface FightTeam {
