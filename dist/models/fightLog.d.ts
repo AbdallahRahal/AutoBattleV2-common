@@ -1,6 +1,29 @@
+import { ClassRecord } from "./character";
+import { Item } from "./item";
+import { StatRecord } from "./stat";
 export interface CombatLog {
     type: string;
     data: any;
+}
+export interface FightDataLog extends CombatLog {
+    type: "FightData";
+    data: FightState;
+}
+export interface FightState {
+    teams: TeamsState[];
+}
+export interface TeamsState {
+    teamId: string;
+    members: FighterState[];
+}
+export interface FighterState {
+    name: string;
+    level: number;
+    stats: StatRecord;
+    class: ClassRecord;
+    items: Item[];
+    modelName: string;
+    actualLifePoint: number;
 }
 export interface SpellPerformedLog extends CombatLog {
     type: "SpellPerformed";

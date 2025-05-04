@@ -1,15 +1,43 @@
+import { ClassRecord } from "./character";
+import { Item } from "./item";
+import { StatRecord } from "./stat";
+
 // Log générique
 export interface CombatLog {
     type: string;
     data: any;
 }
 
-// Logs d'Actions (AutoAttack / Spell)
+export interface FightDataLog extends CombatLog {
+    type: "FightData";
+    data: FightState;
+}
+
+
+export interface FightState {
+    teams: TeamsState[]
+}
+
+export interface TeamsState {
+    teamId: string;
+    members: FighterState[];
+}
+
+export interface FighterState {
+    name: string;
+    level: number;
+    stats: StatRecord;
+    class: ClassRecord;
+    items: Item[];
+    modelName: string;
+
+    actualLifePoint: number;
+}
+
 export interface SpellPerformedLog extends CombatLog {
     type: "SpellPerformed";
     data: SpellPerformedLogData;
 }
-
 export interface SpellPerformedLogData {
     sourceId: string;
     targetId: string[];
@@ -82,3 +110,4 @@ export interface CharacterDiedLog extends CombatLog {
         killerId: string;
     };
 }
+
