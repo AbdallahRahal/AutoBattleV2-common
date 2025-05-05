@@ -2,20 +2,10 @@ import { ClassRecord } from "./character";
 import { Item } from "./item";
 import { StatRecord } from "./stat";
 
-// Log générique
-export interface CombatLog {
-    type: string;
-    data: any;
-}
-
-export interface FightDataLog extends CombatLog {
-    type: "FightData";
-    data: FightState;
-}
-
+// --- FIGHT DATA ---
 
 export interface FightState {
-    teams: TeamsState[]
+    teams: TeamsState[];
 }
 
 export interface TeamsState {
@@ -31,24 +21,43 @@ export interface FighterState {
     class: ClassRecord;
     items: Item[];
     modelName: string;
-
     maxLifePoint: number;
     actualLifePoint: number;
-    isAlive: boolean
+    isAlive: boolean;
 }
 
-export interface SpellPerformedLog extends CombatLog {
+// --- LOG TYPES ---
+
+export type CombatLog =
+    | FightDataLog
+    | SpellPerformedLog
+    | DamageDealtLog
+    | HealPerformedLog
+    | DodgePerformedLog
+    | BuffAppliedLog
+    | BuffExpiredLog
+    | HealthUpdateLog
+    | CharacterDiedLog;
+
+// === FIGHT DATA ===
+export interface FightDataLog {
+    type: "FightData";
+    data: FightState;
+}
+
+// === SPELL ===
+export interface SpellPerformedLog {
     type: "SpellPerformed";
-    data: SpellPerformedLogData;
+    data: {
+        sourceId: string;
+        targetId: string[];
+        spellName: string;
+        timestamp: number;
+    };
 }
-export interface SpellPerformedLogData {
-    sourceId: string;
-    targetId: string[];
-    spellName: string;
-    timestamp: number;
-}
-// Logs de Dégâts
-export interface DamageDealtLog extends CombatLog {
+
+// === DAMAGE ===
+export interface DamageDealtLog {
     type: "DamageDealt";
     data: {
         sourceId: string;
@@ -59,8 +68,8 @@ export interface DamageDealtLog extends CombatLog {
     };
 }
 
-// Logs de Soins
-export interface HealPerformedLog extends CombatLog {
+// === HEAL ===
+export interface HealPerformedLog {
     type: "HealPerformed";
     data: {
         sourceId: string;
@@ -70,14 +79,17 @@ export interface HealPerformedLog extends CombatLog {
         spellName: string;
     };
 }
-export interface DodgePerformedLog extends CombatLog {
+
+// === DODGE ===
+export interface DodgePerformedLog {
     type: "DodgePerformed";
     data: {
         dodgerId: string;
     };
 }
-// Logs de Buffs/Debuffs
-export interface BuffAppliedLog extends CombatLog {
+
+// === BUFF APPLIED ===
+export interface BuffAppliedLog {
     type: "BuffApplied";
     data: {
         charId: string;
@@ -86,17 +98,18 @@ export interface BuffAppliedLog extends CombatLog {
     };
 }
 
-export interface BuffExpiredLog extends CombatLog {
+// === BUFF EXPIRED ===
+export interface BuffExpiredLog {
     type: "BuffExpired";
     data: {
         charId: string;
         buffName: string;
         charge: number;
-
     };
 }
 
-export interface HealthUpdateLog extends CombatLog {
+// === HEALTH UPDATE ===
+export interface HealthUpdateLog {
     type: "HealthUpdate";
     data: {
         charId: string;
@@ -105,11 +118,11 @@ export interface HealthUpdateLog extends CombatLog {
     };
 }
 
-export interface CharacterDiedLog extends CombatLog {
+// === CHARACTER DIED ===
+export interface CharacterDiedLog {
     type: "CharacterDied";
     data: {
         charId: string;
         killerId: string;
     };
 }
-

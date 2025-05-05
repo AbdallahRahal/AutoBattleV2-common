@@ -1,14 +1,6 @@
 import { ClassRecord } from "./character";
 import { Item } from "./item";
 import { StatRecord } from "./stat";
-export interface CombatLog {
-    type: string;
-    data: any;
-}
-export interface FightDataLog extends CombatLog {
-    type: "FightData";
-    data: FightState;
-}
 export interface FightState {
     teams: TeamsState[];
 }
@@ -28,17 +20,21 @@ export interface FighterState {
     actualLifePoint: number;
     isAlive: boolean;
 }
-export interface SpellPerformedLog extends CombatLog {
+export type CombatLog = FightDataLog | SpellPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | BuffAppliedLog | BuffExpiredLog | HealthUpdateLog | CharacterDiedLog;
+export interface FightDataLog {
+    type: "FightData";
+    data: FightState;
+}
+export interface SpellPerformedLog {
     type: "SpellPerformed";
-    data: SpellPerformedLogData;
+    data: {
+        sourceId: string;
+        targetId: string[];
+        spellName: string;
+        timestamp: number;
+    };
 }
-export interface SpellPerformedLogData {
-    sourceId: string;
-    targetId: string[];
-    spellName: string;
-    timestamp: number;
-}
-export interface DamageDealtLog extends CombatLog {
+export interface DamageDealtLog {
     type: "DamageDealt";
     data: {
         sourceId: string;
@@ -48,7 +44,7 @@ export interface DamageDealtLog extends CombatLog {
         spellName: string;
     };
 }
-export interface HealPerformedLog extends CombatLog {
+export interface HealPerformedLog {
     type: "HealPerformed";
     data: {
         sourceId: string;
@@ -58,13 +54,13 @@ export interface HealPerformedLog extends CombatLog {
         spellName: string;
     };
 }
-export interface DodgePerformedLog extends CombatLog {
+export interface DodgePerformedLog {
     type: "DodgePerformed";
     data: {
         dodgerId: string;
     };
 }
-export interface BuffAppliedLog extends CombatLog {
+export interface BuffAppliedLog {
     type: "BuffApplied";
     data: {
         charId: string;
@@ -72,7 +68,7 @@ export interface BuffAppliedLog extends CombatLog {
         charge: number;
     };
 }
-export interface BuffExpiredLog extends CombatLog {
+export interface BuffExpiredLog {
     type: "BuffExpired";
     data: {
         charId: string;
@@ -80,7 +76,7 @@ export interface BuffExpiredLog extends CombatLog {
         charge: number;
     };
 }
-export interface HealthUpdateLog extends CombatLog {
+export interface HealthUpdateLog {
     type: "HealthUpdate";
     data: {
         charId: string;
@@ -88,7 +84,7 @@ export interface HealthUpdateLog extends CombatLog {
         maxHealth: number;
     };
 }
-export interface CharacterDiedLog extends CombatLog {
+export interface CharacterDiedLog {
     type: "CharacterDied";
     data: {
         charId: string;
