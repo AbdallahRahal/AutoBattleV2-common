@@ -61,8 +61,7 @@ export interface HealPerformedLog extends CombatLog {
 export interface DodgePerformedLog extends CombatLog {
     type: "DodgePerformed";
     data: {
-        sourceId: string;
-        targetId: string;
+        dodgerId: string;
     };
 }
 export interface BuffAppliedLog extends CombatLog {
