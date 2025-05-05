@@ -14,6 +14,8 @@ export interface Character {
     experience: number;
     baseStats: StatRecord;
     baseClass: ClassRecord;
+    computedStats: StatRecord;
+    computedClass: ClassRecord;
     items: Item[];
     modelName: string;
     duelsLeft: number;

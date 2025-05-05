@@ -18,10 +18,11 @@ export interface Character {
     level: number;
     experience: number;
 
-
     baseStats: StatRecord;
     baseClass: ClassRecord;
 
+    computedStats: StatRecord;
+    computedClass: ClassRecord;
 
     items: Item[];
 
