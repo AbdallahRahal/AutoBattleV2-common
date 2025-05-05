@@ -1,4 +1,5 @@
 import { ClassRecord } from "./character";
+import { DamageMeterState } from "./damageMeter";
 import { Item } from "./item";
 import { StatRecord } from "./stat";
 
@@ -6,6 +7,7 @@ import { StatRecord } from "./stat";
 
 export interface FightState {
     teams: TeamsState[];
+    damageMeter: DamageMeterState;
 }
 
 export interface TeamsState {
