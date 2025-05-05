@@ -1,3 +1,4 @@
+export * from "./damageMeter";
 export * from "./fightLog";
 export * from "./notification";
 export * from "./character";
