@@ -18,5 +18,3 @@ export interface Character {
     modelName: string;
     duelsLeft: number;
 }
-export declare function getInitialAndItemsClass(character: Character): ClassRecord;
-export declare function getInitialAndItemsStat(character: Character): StatRecord;
