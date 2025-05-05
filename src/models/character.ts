@@ -25,7 +25,7 @@ export interface Character {
     computedClass: ClassRecord;
 
     items: Item[];
-    itemChoice: Item[][];
+    itemChoice: Record<string, Item[]>;
     modelName: string;
     duelsLeft: number;
 }
