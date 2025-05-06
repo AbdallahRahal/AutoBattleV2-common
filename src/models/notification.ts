@@ -1,12 +1,14 @@
+import { Fight } from "./fight";
+
 // Liste des events que le backend peut envoyer
 export type NotificationEvent =
-    | "combat-started"
-    | "inventory-updated"
+    | "fight-ended"
+    | "fight-started"
     | "event-occurred";
 
 // Type des données envoyées par chaque event
 export type NotificationPayloads = {
-    "combat-started": { combatId: string };
-    "inventory-updated": {}; // Pas de données
+    "fight-started": { fight: Fight };
+    "fight-ended": { fight: Fight };
     "event-occurred": { name: string };
 };

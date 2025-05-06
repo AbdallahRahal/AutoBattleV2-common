@@ -1,9 +1,12 @@
-export type NotificationEvent = "combat-started" | "inventory-updated" | "event-occurred";
+import { Fight } from "./fight";
+export type NotificationEvent = "fight-ended" | "fight-started" | "event-occurred";
 export type NotificationPayloads = {
-    "combat-started": {
-        combatId: string;
+    "fight-started": {
+        fight: Fight;
     };
-    "inventory-updated": {};
+    "fight-ended": {
+        fight: Fight;
+    };
     "event-occurred": {
         name: string;
     };
