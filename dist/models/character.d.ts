@@ -9,6 +9,7 @@ export type ClassRecord = Record<ClassName, number>;
 export interface Character {
     id: string;
     ownerId: string;
+    ownerDiscordId: string;
     name: string;
     level: number;
     experience: number;

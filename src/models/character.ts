@@ -13,6 +13,7 @@ export interface Character {
     id: string;
 
     ownerId: string;
+    ownerDiscordId: string;
 
     name: string;
     level: number;
