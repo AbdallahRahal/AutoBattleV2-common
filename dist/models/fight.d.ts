@@ -10,7 +10,8 @@ export interface Fight {
     containerId: string;
     fightTime: number;
     createdAt: Date;
-    background: String;
+    background: string;
+    discordServerId?: string;
 }
 export interface FightTeam {
     teamId: string;
