@@ -1,4 +1,5 @@
 import { Character } from "./character";
+import { CombatLog } from "./fightLog";
 
 export interface Fight {
     id: string;
@@ -13,6 +14,7 @@ export interface Fight {
     createdAt: Date
     background: string,
     discordServerId?: string
+    fightLog?: { dateTime: number, combatLog: CombatLog }[]
 }
 
 export interface FightTeam {

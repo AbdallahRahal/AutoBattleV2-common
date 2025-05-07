@@ -1,4 +1,5 @@
 import { Character } from "./character";
+import { CombatLog } from "./fightLog";
 export interface Fight {
     id: string;
     status: 'PENDING' | 'ACTIVE' | 'FINISH' | 'FAILED';
@@ -12,6 +13,10 @@ export interface Fight {
     createdAt: Date;
     background: string;
     discordServerId?: string;
+    fightLog?: {
+        dateTime: number;
+        combatLog: CombatLog;
+    }[];
 }
 export interface FightTeam {
     teamId: string;
