@@ -10,6 +10,7 @@ export interface Character {
     id: string;
     ownerId: string;
     ownerDiscordId: string;
+    baseDiscordServerId: string;
     name: string;
     level: number;
     experience: number;

@@ -14,6 +14,7 @@ export interface Character {
 
     ownerId: string;
     ownerDiscordId: string;
+    baseDiscordServerId: string;
 
     name: string;
     level: number;
