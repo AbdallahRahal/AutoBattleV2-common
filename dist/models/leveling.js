@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getXpToNextLevel = exports.getXpForLevel = exports.LEVEL_EXPERIENCE_TABLE = void 0;
+exports.getXpToNextLevel = exports.getXpForLevel = exports.totalXpCaps = exports.LEVEL_EXPERIENCE_TABLE = void 0;
 // Tableau XP statique pour chaque niveau jusqu'au niveau 20
 // [niveau] = XP nécessaire pour atteindre ce niveau
 exports.LEVEL_EXPERIENCE_TABLE = [
@@ -26,6 +26,7 @@ exports.LEVEL_EXPERIENCE_TABLE = [
     17100, // Level 19
     20000, // Level 20
 ];
+exports.totalXpCaps = [Infinity, 250, 800, 2100, 4500, 8000, 12000]; // Dimanche = Infinity
 // Obtenir l'expérience nécessaire pour atteindre un niveau spécifique
 function getXpForLevel(level) {
     if (level <= 0)

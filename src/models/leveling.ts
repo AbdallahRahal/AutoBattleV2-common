@@ -23,6 +23,7 @@ export const LEVEL_EXPERIENCE_TABLE: number[] = [
     17100, // Level 19
     20000, // Level 20
 ];
+export const totalXpCaps = [Infinity, 250, 800, 2100, 4500, 8000, 12000]; // Dimanche = Infinity
 
 // Obtenir l'expérience nécessaire pour atteindre un niveau spécifique
 export function getXpForLevel(level: number): number {
