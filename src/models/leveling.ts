@@ -4,27 +4,24 @@ export const LEVEL_EXPERIENCE_TABLE: number[] = [
     0,    // Level 0 (optionnel)
     0,    // Level 1 
     100,  // Level 2
-    300,  // Level 3
-    600,  // Level 4
-    1000, // Level 5
-    1500, // Level 6
-    2100, // Level 7
-    2800, // Level 8
-    3600, // Level 9
-    4500, // Level 10
-    5500, // Level 11
-    6600, // Level 12
-    7800, // Level 13
-    9100, // Level 14
-    10500, // Level 15
-    12000, // Level 16
-    13600, // Level 17
-    15300, // Level 18
-    17100, // Level 19
-    20000, // Level 20
+    200,  // Level 3 ITEM MAX LUNDI
+    300,  // Level 4
+    400, // Level 5 ITEM MAX MARDI
+    500, // Level 6
+    600, // Level 7 ITEM MAX MERCREDI
+    700, // Level 8
+    800, // Level 9 ITEM MAX JEUDI
+    900, // Level 10
+    1000, // Level 11 ITEM MAX VENDREDI
+    1100, // Level 12
+    1200, // Level 13 ITEM MAX SAMEDI
+    1300, // Level 14
+    1400, // Level 15 ITEM MAX Dimanche
+
 ];
 
-export const totalXpCaps = [Infinity, 250, 800, 2100, 4500, 8000, 12000]; // Dimanche = Infinity
+export const totalXpCaps = [1400, 200, 400, 600, 800, 1000, 1200]; // Dimanche = Infinity
+
 
 // Obtenir l'expérience nécessaire pour atteindre un niveau spécifique
 export function getXpForLevel(level: number): number {
