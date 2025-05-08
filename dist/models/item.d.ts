@@ -6,6 +6,8 @@ export interface Item {
     description: string;
     stats: StatRecord;
     class: ClassRecord;
+    isBasic: boolean;
+    dropable: boolean;
     spellId?: number;
     icon: string;
 }
