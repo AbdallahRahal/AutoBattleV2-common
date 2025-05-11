@@ -22,7 +22,7 @@ export interface FighterState {
     actualLifePoint: number;
     isAlive: boolean;
 }
-export type CombatLog = FightDataLog | SpellPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | BuffAppliedLog | BuffExpiredLog | HealthUpdateLog | CharacterDiedLog;
+export type CombatLog = FightDataLog | SpellPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | BuffAppliedLog | BuffExpiredLog | HealthUpdateLog | CharacterDiedLog | StatChangedLog;
 export interface FightDataLog {
     type: "FightData";
     data: FightState;
@@ -91,5 +91,12 @@ export interface CharacterDiedLog {
     data: {
         charId: string;
         killerId: string;
+    };
+}
+export interface StatChangedLog {
+    type: "StatChanged";
+    data: {
+        charId: string;
+        newStat: StatRecord;
     };
 }

@@ -39,7 +39,8 @@ export type CombatLog =
     | BuffAppliedLog
     | BuffExpiredLog
     | HealthUpdateLog
-    | CharacterDiedLog;
+    | CharacterDiedLog
+    | StatChangedLog;
 
 // === FIGHT DATA ===
 export interface FightDataLog {
@@ -127,4 +128,11 @@ export interface CharacterDiedLog {
         charId: string;
         killerId: string;
     };
+}
+export interface StatChangedLog {
+    type: "StatChanged";
+    data: {
+        charId: string,
+        newStat: StatRecord
+    }
 }
