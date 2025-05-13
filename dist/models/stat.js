@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.statTranslation = void 0;
+exports.allocationPointValue = exports.statTranslation = void 0;
 exports.statTranslation = {
     MaxLifePoint: "Vie",
     Haste: "Hâte",
@@ -16,4 +16,13 @@ exports.statTranslation = {
     DodgeMultiplier: "Multiplicateur d'Esquive",
     ResistanceMultiplier: "Multiplicateur de Résistance",
     MaxLifePointMultiplier: "Multiplicateur de Vie"
+};
+exports.allocationPointValue = {
+    // MaxLifePoint: 10,
+    // Power: "Puissance",
+    Haste: 2,
+    Dodge: 2,
+    CritChance: 2,
+    CritPower: 2,
+    Resistance: 2,
 };

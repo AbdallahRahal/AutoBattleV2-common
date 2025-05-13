@@ -100,5 +100,3 @@ export interface StatChangedLog {
         newStat: StatRecord;
     };
 }
-export type StatAllocationPointDistribution = Record<AllocationPointKey, number>;
-export type AllocationPointKey = 'PowerAllocationPoint' | 'HasteAllocationPoint' | 'CritChanceAllocationPoint' | 'CritPowerAllocationPoint' | 'DodgeAllocationPoint' | 'ResistanceAllocationPoint' | 'MaxLifePointAllocationPoint';
