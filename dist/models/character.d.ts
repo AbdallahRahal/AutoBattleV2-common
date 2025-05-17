@@ -23,3 +23,4 @@ export interface Character {
     modelName: string;
     duelsLeft: number;
 }
+export type ClassAllocationPointDistribution = Record<ClassName, number>;

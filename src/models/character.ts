@@ -32,3 +32,5 @@ export interface Character {
     duelsLeft: number;
 }
 
+
+export type ClassAllocationPointDistribution = Record<ClassName, number>;
