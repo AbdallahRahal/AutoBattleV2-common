@@ -18,8 +18,8 @@ exports.statTranslation = {
     MaxLifePointMultiplier: "Multiplicateur de Vie"
 };
 exports.allocationPointValue = {
-    MaxLifePoint: 10,
-    Power: 2,
+    MaxLifePoint: 60,
+    Power: 5,
     Haste: 2,
     Dodge: 2,
     CritChance: 2,

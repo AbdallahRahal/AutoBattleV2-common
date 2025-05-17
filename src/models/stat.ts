@@ -49,8 +49,8 @@ export type StatAllocationPointKey =
     | 'ResistanceAllocationPoint';
 
 export const allocationPointValue: Partial<Record<StatKey, number>> = {
-    MaxLifePoint: 10,
-    Power: 2,
+    MaxLifePoint: 60,
+    Power: 5,
     Haste: 2,
     Dodge: 2,
     CritChance: 2,
