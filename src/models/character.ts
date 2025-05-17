@@ -1,5 +1,5 @@
 import { Item } from "./item";
-import { StatKey, StatRecord } from "./stat";
+import { StatAllocationPointDistribution, StatKey, StatRecord } from "./stat";
 
 export enum ClassName {
     Arcanist = "Arcanist",
@@ -30,6 +30,13 @@ export interface Character {
     itemChoice: Record<string, Item[]>;
     modelName: string;
     duelsLeft: number;
+
+    statAllocationPoint: number
+    statAllocationPointDistribution: StatAllocationPointDistribution
+
+    classAllocationPoint: number
+    classAllocationPointDistribution: ClassAllocationPointDistribution
+
 }
 
 
