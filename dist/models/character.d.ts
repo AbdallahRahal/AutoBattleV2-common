@@ -26,5 +26,9 @@ export interface Character {
     statAllocationPointDistribution: StatAllocationPointDistribution;
     classAllocationPoint: number;
     classAllocationPointDistribution: ClassAllocationPointDistribution;
+    procDuelCount: number;
+    procDuelWin: number;
+    dailyDuelCount: number;
+    dailyDuelWin: number;
 }
 export type ClassAllocationPointDistribution = Record<ClassName, number>;

@@ -37,6 +37,12 @@ export interface Character {
     classAllocationPoint: number
     classAllocationPointDistribution: ClassAllocationPointDistribution
 
+
+    procDuelCount: number
+    procDuelWin: number
+    dailyDuelCount: number
+    dailyDuelWin: number
+
 }
 
 
