@@ -30,5 +30,6 @@ export interface Character {
     procDuelWin: number;
     dailyDuelCount: number;
     dailyDuelWin: number;
+    itemReroll: number;
 }
 export type ClassAllocationPointDistribution = Record<ClassName, number>;

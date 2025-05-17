@@ -40,8 +40,11 @@ export interface Character {
 
     procDuelCount: number
     procDuelWin: number
+
     dailyDuelCount: number
     dailyDuelWin: number
+
+    itemReroll: number
 
 }
 
