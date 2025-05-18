@@ -14,6 +14,7 @@ export interface Fight {
     createdAt: Date
     background: string,
     discordServerId?: string
+    raidLevel?: number
     fightLog?: { dateTime: number, combatLog: CombatLog }[]
 }
 
