@@ -21,6 +21,7 @@ export interface FighterState {
     maxLifePoint: number;
     actualLifePoint: number;
     isAlive: boolean;
+    type: "Player" | "Boss" | "Minion";
 }
 export type CombatLog = FightDataLog | SpellPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | BuffAppliedLog | BuffExpiredLog | HealthUpdateLog | CharacterDiedLog | StatChangedLog;
 export interface FightDataLog {

@@ -26,6 +26,7 @@ export interface FighterState {
     maxLifePoint: number;
     actualLifePoint: number;
     isAlive: boolean;
+    type: "Player" | "Boss" | "Minion"
 }
 
 // --- LOG TYPES ---
