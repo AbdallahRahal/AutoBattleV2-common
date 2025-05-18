@@ -31,5 +31,6 @@ export interface Character {
     dailyDuelCount: number;
     dailyDuelWin: number;
     itemReroll: number;
+    figherType: 'Player' | 'Boss' | 'Minion';
 }
 export type ClassAllocationPointDistribution = Record<ClassName, number>;

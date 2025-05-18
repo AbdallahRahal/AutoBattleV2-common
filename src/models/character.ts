@@ -46,6 +46,8 @@ export interface Character {
 
     itemReroll: number
 
+    figherType: 'Player' | 'Boss' | 'Minion';
+
 }
 
 
