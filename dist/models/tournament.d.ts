@@ -9,5 +9,5 @@ export interface Tournament {
 }
 export interface TournamentRound {
     teams: string[];
-    fights: Fight;
+    fights: Fight[];
 }
