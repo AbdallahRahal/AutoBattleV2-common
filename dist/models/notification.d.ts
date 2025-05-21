@@ -10,5 +10,6 @@ export type NotificationPayloads = {
     "event-occurred": {
         name: string;
     };
+    "tournament-started": {};
     "tournament-changed": {};
 };
