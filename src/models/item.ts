@@ -9,6 +9,7 @@ export interface Item {
     stats: StatRecord;
     class: ClassRecord;
     isBasic: boolean
+    isClassItem: boolean
     dropable: boolean
     spellId?: number
     icon: string
