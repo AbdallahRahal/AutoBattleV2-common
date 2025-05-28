@@ -26,13 +26,15 @@ export interface FighterState {
     maxLifePoint: number;
     actualLifePoint: number;
     isAlive: boolean;
-    figherType: "Player" | "Boss" | "Minion"
+    figherType: "Player" | "Boss" | "Minion",
+    invokerId?: string
 }
 
 // --- LOG TYPES ---
 
 export type CombatLog =
     | FightDataLog
+    | ForceRerenderLog
     | SpellPerformedLog
     | DamageDealtLog
     | HealPerformedLog
@@ -48,7 +50,10 @@ export interface FightDataLog {
     type: "FightData";
     data: FightState;
 }
-
+// === FIGHT DATA ===
+export interface ForceRerenderLog {
+    type: "ForceRerender";
+}
 // === SPELL ===
 export interface SpellPerformedLog {
     type: "SpellPerformed";

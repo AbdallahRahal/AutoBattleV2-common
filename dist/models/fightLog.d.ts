@@ -22,11 +22,15 @@ export interface FighterState {
     actualLifePoint: number;
     isAlive: boolean;
     figherType: "Player" | "Boss" | "Minion";
+    invokerId?: string;
 }
-export type CombatLog = FightDataLog | SpellPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | BuffAppliedLog | BuffExpiredLog | HealthUpdateLog | CharacterDiedLog | StatChangedLog;
+export type CombatLog = FightDataLog | ForceRerenderLog | SpellPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | BuffAppliedLog | BuffExpiredLog | HealthUpdateLog | CharacterDiedLog | StatChangedLog;
 export interface FightDataLog {
     type: "FightData";
     data: FightState;
+}
+export interface ForceRerenderLog {
+    type: "ForceRerender";
 }
 export interface SpellPerformedLog {
     type: "SpellPerformed";
