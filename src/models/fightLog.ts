@@ -34,7 +34,6 @@ export interface FighterState {
 
 export type CombatLog =
     | FightDataLog
-    | ForceRerenderLog
     | SpellPerformedLog
     | DamageDealtLog
     | HealPerformedLog
@@ -50,10 +49,7 @@ export interface FightDataLog {
     type: "FightData";
     data: FightState;
 }
-// === FIGHT DATA ===
-export interface ForceRerenderLog {
-    type: "ForceRerender";
-}
+
 // === SPELL ===
 export interface SpellPerformedLog {
     type: "SpellPerformed";
