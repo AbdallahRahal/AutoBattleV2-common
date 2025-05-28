@@ -27,7 +27,7 @@ export interface FighterState {
     actualLifePoint: number;
     isAlive: boolean;
     figherType: "Player" | "Boss" | "Minion",
-    invokerId?: string
+    invokerId: string | null
 }
 
 // --- LOG TYPES ---
