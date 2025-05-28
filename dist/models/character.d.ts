@@ -3,7 +3,8 @@ import { StatAllocationPointDistribution, StatRecord } from "./stat";
 export declare enum ClassName {
     Arcanist = "Arcanist",
     Scout = "Scout",
-    Guard = "Guard"
+    Guard = "Guard",
+    Invoker = "Invoker"
 }
 export type ClassRecord = Record<ClassName, number>;
 export interface Character {

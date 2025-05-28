@@ -5,6 +5,7 @@ export enum ClassName {
     Arcanist = "Arcanist",
     Scout = "Scout",
     Guard = "Guard",
+    Invoker = "Invoker",
 }
 
 export type ClassRecord = Record<ClassName, number>;

@@ -6,4 +6,5 @@ var ClassName;
     ClassName["Arcanist"] = "Arcanist";
     ClassName["Scout"] = "Scout";
     ClassName["Guard"] = "Guard";
+    ClassName["Invoker"] = "Invoker";
 })(ClassName || (exports.ClassName = ClassName = {}));
