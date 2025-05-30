@@ -1,5 +1,5 @@
 import { Fight } from "./fight";
-export type NotificationEvent = "fight-ended" | "fight-started" | "event-occurred" | "tournament-started" | "tournament-changed";
+export type NotificationEvent = "fight-ended" | "fight-started" | "event-occurred" | "tournament-started" | "raid-started" | "tournament-changed";
 export type NotificationPayloads = {
     "fight-started": {
         fight: Fight;
@@ -11,5 +11,6 @@ export type NotificationPayloads = {
         name: string;
     };
     "tournament-started": {};
+    "raid-started": {};
     "tournament-changed": {};
 };

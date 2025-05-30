@@ -6,6 +6,7 @@ export type NotificationEvent =
     | "fight-started"
     | "event-occurred"
     | "tournament-started"
+    | "raid-started"
     | "tournament-changed";
 
 // Type des données envoyées par chaque event
@@ -14,5 +15,6 @@ export type NotificationPayloads = {
     "fight-ended": { fight: Fight };
     "event-occurred": { name: string };
     "tournament-started": {};
+    "raid-started": {};
     "tournament-changed": {};
 };
