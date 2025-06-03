@@ -9,7 +9,7 @@ export interface FightState {
     teams: TeamsState[];
     damageMeter: DamageMeterState;
     startTime: number;
-    status: 'PENDING' | 'ACTIVE' | 'FINISH'
+    status: 'INITIALIZING' | 'SETUP' | 'ONGOING' | 'ENDED';
 }
 
 export interface TeamsState {
