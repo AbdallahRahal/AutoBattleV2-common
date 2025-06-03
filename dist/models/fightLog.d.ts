@@ -5,6 +5,8 @@ import { StatRecord } from "./stat";
 export interface FightState {
     teams: TeamsState[];
     damageMeter: DamageMeterState;
+    startTime: number;
+    status: 'PENDING' | 'ACTIVE' | 'FINISH';
 }
 export interface TeamsState {
     teamId: string;
