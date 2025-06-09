@@ -4,5 +4,5 @@ export interface Team {
     id: string;
     name: string;
     member: Character[]
-    joinCode: string
+    joinCode: number
 }
