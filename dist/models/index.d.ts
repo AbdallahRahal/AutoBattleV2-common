@@ -7,3 +7,4 @@ export * from "./item";
 export * from "./stat";
 export * from "./leveling";
 export * from "./tournament";
+export * from "./team";
