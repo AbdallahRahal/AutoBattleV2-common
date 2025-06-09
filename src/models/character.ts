@@ -49,7 +49,7 @@ export interface Character {
 
     figherType: 'Player' | 'Boss' | 'Minion';
 
-    teamId: string
+    teamId: string | null
 
 }
 
