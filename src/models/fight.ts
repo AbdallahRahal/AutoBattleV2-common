@@ -16,7 +16,7 @@ export interface Fight {
     discordServerId?: string
     raidLevel?: number
     fightLog?: { dateTime: number, combatLog: CombatLog }[]
-    type: 'DAILYDUEL' | 'PROCDUEL' | 'RAID' | "TOURNAMENT";
+    type: 'TARGETTEDDUEL' | 'DAILYDUEL' | 'PROCDUEL' | 'RAID' | "TOURNAMENT";
 
 }
 
