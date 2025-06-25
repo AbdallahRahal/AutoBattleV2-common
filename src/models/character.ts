@@ -51,6 +51,7 @@ export interface Character {
 
     teamId: string | null
     lastTargettedDuel: number
+    elo: number
 }
 
 
