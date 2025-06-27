@@ -11,10 +11,10 @@ export type NotificationPayloads = {
         name: string;
     };
     "tournament-started": {
-        players: number;
+        playersNumber: number;
     };
     "raid-started": {
-        teams: number;
+        teamsNumber: number;
     };
     "tournament-changed": {};
 };
