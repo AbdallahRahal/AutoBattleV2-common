@@ -10,7 +10,11 @@ export type NotificationPayloads = {
     "event-occurred": {
         name: string;
     };
-    "tournament-started": {};
-    "raid-started": {};
+    "tournament-started": {
+        players: number;
+    };
+    "raid-started": {
+        teams: number;
+    };
     "tournament-changed": {};
 };
