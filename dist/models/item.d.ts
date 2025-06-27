@@ -8,6 +8,7 @@ export interface Item {
     class: ClassRecord;
     isBasic: boolean;
     isClassItem: boolean;
+    isWeapon: boolean;
     dropable: boolean;
     spellId?: number;
     icon: string;
