@@ -20,6 +20,7 @@ export interface Character {
     computedStats: StatRecord;
     computedClass: ClassRecord;
     items: Item[];
+    weapon: Item;
     itemChoice: Record<string, Item[]>;
     modelName: string;
     duelsLeft: number;
