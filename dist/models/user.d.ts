@@ -6,4 +6,5 @@ export interface User {
     canTagOnMessage: boolean;
     modelList: string[];
     randomModelCoin: number;
+    weaponSpellId: number[];
 }
