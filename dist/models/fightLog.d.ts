@@ -26,13 +26,22 @@ export interface FighterState {
     figherType: "Player" | "Boss" | "Minion";
     invokerId: string | null;
 }
-export type CombatLog = FightDataLog | SpellPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | BuffAppliedLog | BuffExpiredLog | HealthUpdateLog | CharacterDiedLog | StatChangedLog;
+export type CombatLog = FightDataLog | SpellPerformedLog | AttackPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | BuffAppliedLog | BuffExpiredLog | HealthUpdateLog | CharacterDiedLog | StatChangedLog;
 export interface FightDataLog {
     type: "FightData";
     data: FightState;
 }
 export interface SpellPerformedLog {
     type: "SpellPerformed";
+    data: {
+        sourceId: string;
+        targetId: string[];
+        spellName: string;
+        timestamp: number;
+    };
+}
+export interface AttackPerformedLog {
+    type: "AttackPerformed";
     data: {
         sourceId: string;
         targetId: string[];

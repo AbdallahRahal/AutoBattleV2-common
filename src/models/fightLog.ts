@@ -37,6 +37,7 @@ export interface FighterState {
 export type CombatLog =
     | FightDataLog
     | SpellPerformedLog
+    | AttackPerformedLog
     | DamageDealtLog
     | HealPerformedLog
     | DodgePerformedLog
@@ -62,6 +63,17 @@ export interface SpellPerformedLog {
         timestamp: number;
     };
 }
+
+export interface AttackPerformedLog {
+    type: "AttackPerformed";
+    data: {
+        sourceId: string;
+        targetId: string[];
+        spellName: string;
+        timestamp: number;
+    };
+}
+
 
 // === DAMAGE ===
 export interface DamageDealtLog {
