@@ -37,7 +37,22 @@ export const statTranslation: Record<StatKey, string> = {
     MaxLifePointMultiplier: "Multiplicateur de Vie"
 };
 
-
+export const statDescriptionTranslation: Record<StatKey, string> = {
+    MaxLifePoint: "Augmente vos points de vie maximum",
+    Haste: "Reduit le temps de recharge des armes et objets",
+    Dodge: "Augmente les chances d'esquiver complètement les attaques.",
+    CritChance: "Augmente les chances de réaliser un coup critique (50% de dégâts ou soins en plus).",
+    CritPower: "Augmente le modificateur de dégâts et soins en cas de coup critique",
+    Power: "Augmente les dégâts infligés et les soins prodigués.",
+    Resistance: "Réduit les dégâts subit",
+    PowerMultiplier: "Multiplicateur de Puissance",
+    HasteMultiplier: "Multiplicateur de Hâte",
+    CritChanceMultiplier: "Multiplicateur de Chance Critique",
+    CritPowerMultiplier: "Multiplicateur de Puissance Critique",
+    DodgeMultiplier: "Multiplicateur d'Esquive",
+    ResistanceMultiplier: "Multiplicateur de Résistance",
+    MaxLifePointMultiplier: "Multiplicateur de Vie"
+};
 export type StatAllocationPointDistribution = Record<StatAllocationPointKey, number>;
 export type StatAllocationPointKey =
     'PowerAllocationPoint'
