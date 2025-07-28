@@ -14,6 +14,6 @@ export interface User {
 
     weaponSpellId: number[];
 
-    lastSkinSelected: string;
+    lastModelSelected: string;
 }
 
