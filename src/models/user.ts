@@ -13,5 +13,7 @@ export interface User {
     randomModelCoin: number;
 
     weaponSpellId: number[];
+
+    lastSkinSelected: string;
 }
 
