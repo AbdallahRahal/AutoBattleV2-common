@@ -4,7 +4,8 @@ export declare enum ClassName {
     Arcanist = "Arcanist",
     Scout = "Scout",
     Guard = "Guard",
-    Invoker = "Invoker"
+    Invoker = "Invoker",
+    Doppelgänger = "Doppelg\u00E4nger"
 }
 export type ClassRecord = Record<ClassName, number>;
 export interface Character {
