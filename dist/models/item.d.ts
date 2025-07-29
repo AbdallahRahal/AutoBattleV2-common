@@ -6,7 +6,6 @@ export interface Item {
     description: string;
     stats: StatRecord;
     class: ClassRecord;
-    isBasic: boolean;
     isClassItem: boolean;
     isWeapon: boolean;
     dropable: boolean;

@@ -8,7 +8,6 @@ export interface Item {
 
     stats: StatRecord;
     class: ClassRecord;
-    isBasic: boolean
     isClassItem: boolean
     isWeapon: boolean
     dropable: boolean
