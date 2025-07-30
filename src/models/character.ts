@@ -6,7 +6,7 @@ export enum ClassName {
     Scout = "Scout",
     Guard = "Guard",
     Invoker = "Invoker",
-    Doppelgänger = "Doppelgänger",
+    Doppelganger = "Doppelganger",
 }
 
 export type ClassRecord = Record<ClassName, number>;
