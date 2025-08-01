@@ -18,7 +18,7 @@ export interface Fight {
         dateTime: number;
         combatLog: CombatLog;
     }[];
-    type: 'TARGETTEDDUEL' | 'DAILYDUEL' | 'PROCDUEL' | 'RAID' | "TOURNAMENT";
+    type: 'TARGETTEDDUEL' | 'DAILYDUEL' | 'PROCDUEL' | 'RAID' | "TOURNAMENT" | "MERCHANTFIGHT";
 }
 export interface FightTeam {
     teamId: string;

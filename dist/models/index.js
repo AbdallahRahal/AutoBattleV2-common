@@ -25,3 +25,4 @@ __exportStar(require("./leveling"), exports);
 __exportStar(require("./tournament"), exports);
 __exportStar(require("./team"), exports);
 __exportStar(require("./user"), exports);
+__exportStar(require("./merchant"), exports);
