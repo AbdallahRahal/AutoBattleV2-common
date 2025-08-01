@@ -12,7 +12,4 @@ export interface Merchant {
         price: number;
     }[];
 
-    fightHistory: Fight[];
-
-
 }

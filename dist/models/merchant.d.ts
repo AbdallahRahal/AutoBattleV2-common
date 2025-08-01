@@ -1,4 +1,3 @@
-import { Fight } from "./fight";
 import { Item } from "./item";
 export interface Merchant {
     id: string;
@@ -8,5 +7,4 @@ export interface Merchant {
         item: Item;
         price: number;
     }[];
-    fightHistory: Fight[];
 }
