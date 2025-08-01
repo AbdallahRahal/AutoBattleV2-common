@@ -1,4 +1,3 @@
-import { Fight } from "./fight";
 import { Item } from "./item";
 
 export interface Merchant {

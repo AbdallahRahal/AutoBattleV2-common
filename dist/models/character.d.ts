@@ -16,6 +16,7 @@ export interface Character {
     name: string;
     level: number;
     experience: number;
+    gold: number;
     baseStats: StatRecord;
     baseClass: ClassRecord;
     computedStats: StatRecord;
