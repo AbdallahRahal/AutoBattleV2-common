@@ -38,6 +38,7 @@ export interface Character {
     figherType: 'Player' | 'Boss' | 'Minion';
     teamId: string | null;
     lastTargettedDuel: number;
+    lastMerchantFight: number;
     eloRating: number;
 }
 export type ClassAllocationPointDistribution = Record<ClassName, number>;
