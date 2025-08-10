@@ -3,5 +3,5 @@ export type StatKey = 'MaxLifePoint' | 'Haste' | 'Dodge' | 'CritChance' | 'CritP
 export declare const statTranslation: Record<StatKey, string>;
 export declare const statDescriptionTranslation: Record<StatKey, string>;
 export type StatAllocationPointDistribution = Record<StatAllocationPointKey, number>;
-export type StatAllocationPointKey = 'PowerAllocationPoint' | 'MaxLifePointAllocationPoint' | 'HasteAllocationPoint' | 'CritChanceAllocationPoint' | 'CritPowerAllocationPoint' | 'DodgeAllocationPoint' | 'ResistanceAllocationPoint';
+export type StatAllocationPointKey = 'PowerAllocationPoint' | 'MaxLifePointMultiplierAllocationPoint' | 'HasteAllocationPoint' | 'CritChanceAllocationPoint' | 'CritPowerAllocationPoint' | 'DodgeAllocationPoint' | 'ResistanceAllocationPoint';
 export declare const allocationPointValue: Partial<Record<StatKey, number>>;

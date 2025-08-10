@@ -56,7 +56,7 @@ export const statDescriptionTranslation: Record<StatKey, string> = {
 export type StatAllocationPointDistribution = Record<StatAllocationPointKey, number>;
 export type StatAllocationPointKey =
     'PowerAllocationPoint'
-    | 'MaxLifePointAllocationPoint'
+    | 'MaxLifePointMultiplierAllocationPoint'
     | 'HasteAllocationPoint'
     | 'CritChanceAllocationPoint'
     | 'CritPowerAllocationPoint'
@@ -64,7 +64,7 @@ export type StatAllocationPointKey =
     | 'ResistanceAllocationPoint';
 
 export const allocationPointValue: Partial<Record<StatKey, number>> = {
-    MaxLifePoint: 30,
+    MaxLifePoint: 0.025,
     Power: 2,
     Haste: 1,
     Dodge: 1.5,
