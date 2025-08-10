@@ -54,6 +54,7 @@ export const statDescriptionTranslation: Record<StatKey, string> = {
     MaxLifePointMultiplier: "Augmente votre vie selon un pourcentage"
 };
 export type StatAllocationPointDistribution = Record<StatAllocationPointKey, number>;
+
 export type StatAllocationPointKey =
     'PowerAllocationPoint'
     | 'MaxLifePointMultiplierAllocationPoint'
