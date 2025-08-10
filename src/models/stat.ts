@@ -51,7 +51,7 @@ export const statDescriptionTranslation: Record<StatKey, string> = {
     CritPowerMultiplier: "Multiplicateur de Puissance Critique",
     DodgeMultiplier: "Multiplicateur d'Esquive",
     ResistanceMultiplier: "Multiplicateur de Résistance",
-    MaxLifePointMultiplier: "Multiplicateur de Vie"
+    MaxLifePointMultiplier: "Augmente votre vie selon un pourcentage"
 };
 export type StatAllocationPointDistribution = Record<StatAllocationPointKey, number>;
 export type StatAllocationPointKey =

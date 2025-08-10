@@ -31,7 +31,7 @@ exports.statDescriptionTranslation = {
     CritPowerMultiplier: "Multiplicateur de Puissance Critique",
     DodgeMultiplier: "Multiplicateur d'Esquive",
     ResistanceMultiplier: "Multiplicateur de Résistance",
-    MaxLifePointMultiplier: "Multiplicateur de Vie"
+    MaxLifePointMultiplier: "Augmente votre vie selon un pourcentage"
 };
 exports.allocationPointValue = {
     MaxLifePointMultiplier: 0.025,
