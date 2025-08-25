@@ -36,7 +36,7 @@ export interface Character {
     items: Item[];
     weapon?: Item;
     itemChoice: Record<string, Item[]>;
-    modelName: string;
+    model: Model;
     duelsLeft: number;
 
     statAllocationPoint: number
