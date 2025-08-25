@@ -7,7 +7,7 @@ export declare enum ClassName {
     Invoker = "Invoker",
     Doppelganger = "Doppelganger"
 }
-export interface Model {
+export interface SkinModel {
     name: string;
     stats: Partial<StatRecord>;
 }
@@ -28,7 +28,7 @@ export interface Character {
     items: Item[];
     weapon?: Item;
     itemChoice: Record<string, Item[]>;
-    model: Model;
+    model: SkinModel;
     duelsLeft: number;
     statAllocationPoint: number;
     statAllocationPointDistribution: StatAllocationPointDistribution;
