@@ -8,6 +8,10 @@ export enum ClassName {
     Invoker = "Invoker",
     Doppelganger = "Doppelganger",
 }
+export interface Model {
+    name: string,
+    stats: Partial<StatRecord>
+}
 
 export type ClassRecord = Record<ClassName, number>;
 
