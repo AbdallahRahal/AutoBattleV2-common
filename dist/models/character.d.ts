@@ -28,7 +28,7 @@ export interface Character {
     items: Item[];
     weapon?: Item;
     itemChoice: Record<string, Item[]>;
-    model: SkinModel;
+    skinModel: SkinModel;
     duelsLeft: number;
     statAllocationPoint: number;
     statAllocationPointDistribution: StatAllocationPointDistribution;
