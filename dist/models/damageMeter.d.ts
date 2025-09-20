@@ -3,6 +3,7 @@ export interface DamageRecord {
     amount: number;
     spellName: string;
     isCrit: boolean;
+    type: "HEAL" | "DAMAGE";
 }
 export interface DamageMeterState {
     [fighterId: string]: {
