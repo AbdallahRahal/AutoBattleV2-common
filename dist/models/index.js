@@ -26,3 +26,4 @@ __exportStar(require("./tournament"), exports);
 __exportStar(require("./team"), exports);
 __exportStar(require("./user"), exports);
 __exportStar(require("./merchant"), exports);
+__exportStar(require("./userRaidTimelineEntry"), exports);

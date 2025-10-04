@@ -84,6 +84,7 @@ export interface DamageDealtLog {
         amount: number;
         isCrit: boolean;
         spellName: string;
+
     };
 }
 
