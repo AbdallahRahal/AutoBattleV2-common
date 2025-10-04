@@ -11,3 +11,4 @@ export * from "./team";
 export * from "./user";
 export * from "./merchant";
 export * from "./userRaidTimelineEntry";
+export * from "./chatMessage";

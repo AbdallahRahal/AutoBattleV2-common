@@ -27,3 +27,4 @@ __exportStar(require("./team"), exports);
 __exportStar(require("./user"), exports);
 __exportStar(require("./merchant"), exports);
 __exportStar(require("./userRaidTimelineEntry"), exports);
+__exportStar(require("./chatMessage"), exports);
