@@ -28,3 +28,4 @@ __exportStar(require("./user"), exports);
 __exportStar(require("./merchant"), exports);
 __exportStar(require("./userRaidTimelineEntry"), exports);
 __exportStar(require("./chatMessage"), exports);
+__exportStar(require("./relic"), exports);

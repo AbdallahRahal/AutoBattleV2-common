@@ -12,3 +12,4 @@ export * from "./user";
 export * from "./merchant";
 export * from "./userRaidTimelineEntry";
 export * from "./chatMessage";
+export * from "./relic";

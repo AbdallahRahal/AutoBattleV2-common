@@ -1,4 +1,5 @@
 import { Item } from "./item";
+import { Relic } from "./relic";
 import { StatAllocationPointDistribution, StatKey, StatRecord } from "./stat";
 
 export enum ClassName {
@@ -38,6 +39,7 @@ export interface Character {
     itemChoice: Record<string, Item[]>;
     skinModel: SkinModel;
     duelsLeft: number;
+    relic: Relic;
 
     statAllocationPoint: number
     statAllocationPointDistribution: StatAllocationPointDistribution

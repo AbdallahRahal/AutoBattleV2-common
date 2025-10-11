@@ -10,6 +10,7 @@ export interface Item {
     class: ClassRecord;
     isClassItem: boolean
     isWeapon: boolean
+    isRelicItem: boolean
     dropable: boolean
     spellId?: number
     icon: string
