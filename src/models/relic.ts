@@ -18,5 +18,4 @@ export interface Relic {
     item: Item[];
 
     createdAt: string;
-    updatedAt: string;
 }
