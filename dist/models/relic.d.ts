@@ -9,7 +9,7 @@ export interface Relic {
     reroll: number;
     statPoint: number;
     classPoint: number;
-    item: Item;
+    item: Item[];
     createdAt: string;
     updatedAt: string;
 }

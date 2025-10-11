@@ -15,7 +15,7 @@ export interface Relic {
     statPoint: number;
     classPoint: number;
 
-    item: Item;
+    item: Item[];
 
     createdAt: string;
     updatedAt: string;
