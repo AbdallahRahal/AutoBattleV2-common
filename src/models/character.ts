@@ -39,7 +39,7 @@ export interface Character {
     itemChoice: Record<string, Item[]>;
     skinModel: SkinModel;
     duelsLeft: number;
-    relic: Relic;
+    relic?: Relic;
 
     statAllocationPoint: number
     statAllocationPointDistribution: StatAllocationPointDistribution
