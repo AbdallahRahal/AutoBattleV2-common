@@ -19,7 +19,6 @@ export declare enum RelicLineRarity {
 export type RelicTarget = StatKey | ClassName;
 /**
  * Une proposition de ligne de relique hebdomadaire
- * - `optionId` encode le “quoi” (ex: "STAT:Power", "CLASS:Invoker", "SPELL:9001")
  */
 export interface RelicLine {
     type: RelicLineType;
@@ -28,6 +27,7 @@ export interface RelicLine {
     spellId?: number;
     target?: RelicTarget;
     optionId: string;
+    id: string;
 }
 export interface Relic {
     id: string;
