@@ -36,5 +36,6 @@ export interface UserAccountStats {
     merchantsKilled: number;
 
     classePlayed: Record<ClassName, number>
+    itemPlayed: Record<string, number>
 
 }

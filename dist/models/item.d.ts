@@ -10,6 +10,6 @@ export interface Item {
     isWeapon: boolean;
     isRelicItem: boolean;
     dropable: boolean;
-    spellId?: number;
+    spellId: number;
     icon: string;
 }
