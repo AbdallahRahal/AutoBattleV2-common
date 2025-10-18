@@ -1,8 +1,8 @@
 // packages/common/models/relic.ts
 
-import { ClassRecord } from "./character";
+import { ClassName, ClassRecord } from "./character";
 import { Item } from "./item";
-import { StatRecord } from "./stat";
+import { StatKey, StatRecord } from "./stat";
 
 export enum RelicLineType {
     STAT = "STAT",            // + Stat fixe (sauf vie)
@@ -20,7 +20,7 @@ export enum RelicLineRarity {
     EPIC = "EPIC",
     LEGENDARY = "LEGENDARY",
 }
-
+type RelicTarget = StatKey | ClassName;
 /**
  * Une proposition de ligne de relique hebdomadaire
  * - `optionId` encode le “quoi” (ex: "STAT:Power", "CLASS:Invoker", "SPELL:9001")
@@ -30,7 +30,7 @@ export interface RelicLine {
     value: number;
     rarity: RelicLineRarity;
     spellId?: number;
-    target?: string;
+    target?: RelicTarget;
     optionId: string;
 }
 
