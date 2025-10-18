@@ -20,7 +20,9 @@ export enum RelicLineRarity {
     EPIC = "EPIC",
     LEGENDARY = "LEGENDARY",
 }
-type RelicTarget = StatKey | ClassName;
+
+export type RelicTarget = StatKey | ClassName;
+
 /**
  * Une proposition de ligne de relique hebdomadaire
  * - `optionId` encode le “quoi” (ex: "STAT:Power", "CLASS:Invoker", "SPELL:9001")
