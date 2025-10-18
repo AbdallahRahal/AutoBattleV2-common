@@ -21,4 +21,5 @@ export interface UserAccountStats {
     duelsPlayed: number;
     merchantsKilled: number;
     classePlayed: Record<ClassName, number>;
+    itemPlayed: Record<string, number>;
 }
