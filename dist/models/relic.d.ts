@@ -25,6 +25,7 @@ export interface RelicLine {
     value: number;
     rarity: RelicLineRarity;
     spellId?: number;
+    spellDescription?: string;
     target?: RelicTarget;
     optionId: string;
     id: string;
