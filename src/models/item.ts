@@ -12,6 +12,9 @@ export interface Item {
     isWeapon: boolean
     isRelicItem: boolean
     dropable: boolean
+
+    inSeasonBlackList: boolean
+
     spellId: number
     icon: string
 }
