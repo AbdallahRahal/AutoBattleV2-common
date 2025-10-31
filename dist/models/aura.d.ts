@@ -1,7 +1,7 @@
 export type AuraCategory = 'buff' | 'debuff' | 'hot' | 'dot';
 export type AuraApplyBehavior = 'refresh' | 'stack_only' | 'stack_and_refresh' | 'new_instance';
 export interface AuraSnapshot {
-    auraId: string;
+    auraId: AURA_IDS;
     name: string;
     category: AuraCategory;
     stacks: number;
