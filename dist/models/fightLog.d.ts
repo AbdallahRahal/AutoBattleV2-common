@@ -24,6 +24,7 @@ export interface FighterState {
     maxLifePoint: number;
     actualLifePoint: number;
     isAlive: boolean;
+    auras: AuraSnapshot[];
     figherType: "Player" | "Boss" | "Minion";
     invokerId: string | null;
 }
