@@ -1,2 +1,18 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.AURA_IDS = void 0;
+var AURA_IDS;
+(function (AURA_IDS) {
+    AURA_IDS["BouleDeFeu_Brulure"] = "BouleDeFeu_Brulure";
+    AURA_IDS["Toxicite_Poison"] = "Toxicite_Poison";
+    AURA_IDS["DanseDesOmbres_Buff"] = "DanseDesOmbres_Buff";
+    AURA_IDS["DrainSpirituel_Buff"] = "DrainSpirituel_Buff";
+    AURA_IDS["DrainSpirituel_Debuff"] = "DrainSpirituel_Debuff";
+    AURA_IDS["Fracture_Debuff"] = "Fracture_Debuff";
+    AURA_IDS["BrulureSacree_Marque"] = "BrulureSacree_Marque";
+    AURA_IDS["InvocationShaman_Attaque_Brulure"] = "InvocationShaman_Attaque_Brulure";
+    AURA_IDS["Spoliation_Buff"] = "Spoliation_Buff";
+    AURA_IDS["Spoliation_Debuff"] = "Spoliation_Debuff";
+    AURA_IDS["Fulgurance_Buff"] = "Fulgurance_Buff";
+    AURA_IDS["Marquage"] = "Marquage";
+})(AURA_IDS || (exports.AURA_IDS = AURA_IDS = {}));

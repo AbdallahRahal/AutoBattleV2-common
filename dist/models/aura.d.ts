@@ -9,3 +9,17 @@ export interface AuraSnapshot {
     expirationTimestamp: number;
     tickIntervalMs?: number;
 }
+export declare enum AURA_IDS {
+    BouleDeFeu_Brulure = "BouleDeFeu_Brulure",
+    Toxicite_Poison = "Toxicite_Poison",
+    DanseDesOmbres_Buff = "DanseDesOmbres_Buff",
+    DrainSpirituel_Buff = "DrainSpirituel_Buff",
+    DrainSpirituel_Debuff = "DrainSpirituel_Debuff",
+    Fracture_Debuff = "Fracture_Debuff",
+    BrulureSacree_Marque = "BrulureSacree_Marque",
+    InvocationShaman_Attaque_Brulure = "InvocationShaman_Attaque_Brulure",
+    Spoliation_Buff = "Spoliation_Buff",
+    Spoliation_Debuff = "Spoliation_Debuff",
+    Fulgurance_Buff = "Fulgurance_Buff",
+    Marquage = "Marquage"
+}
