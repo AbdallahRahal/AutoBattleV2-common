@@ -9,8 +9,8 @@ export interface AuraSnapshot {
     name: string;
     category: AuraCategory;
     stacks: number;
-    remainingMs: number;
-    totalDurationMs: number;
+    applicationTimestamp: number;
+    expirationTimestamp: number;
     tickIntervalMs?: number;
 }
 
