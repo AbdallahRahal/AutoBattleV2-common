@@ -1,3 +1,4 @@
+import { AuraSnapshot } from "./aura";
 import { ClassRecord } from "./character";
 import { DamageMeterState } from "./damageMeter";
 import { Item } from "./item";
@@ -41,11 +42,10 @@ export type CombatLog =
     | DamageDealtLog
     | HealPerformedLog
     | DodgePerformedLog
-    | BuffAppliedLog
-    | BuffExpiredLog
     | HealthUpdateLog
     | CharacterDiedLog
-    | StatChangedLog;
+    | StatChangedLog
+    | AuraChangedLog;
 
 // === FIGHT DATA ===
 export interface FightDataLog {
@@ -151,5 +151,14 @@ export interface StatChangedLog {
     data: {
         charId: string,
         newStat: StatRecord
+    }
+}
+
+
+export interface AuraChangedLog {
+    type: "AuraUpdate";
+    data: {
+        charId: string,
+        auras: AuraSnapshot[]
     }
 }

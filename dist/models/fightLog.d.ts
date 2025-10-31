@@ -1,3 +1,4 @@
+import { AuraSnapshot } from "./aura";
 import { ClassRecord } from "./character";
 import { DamageMeterState } from "./damageMeter";
 import { Item } from "./item";
@@ -26,7 +27,7 @@ export interface FighterState {
     figherType: "Player" | "Boss" | "Minion";
     invokerId: string | null;
 }
-export type CombatLog = FightDataLog | SpellPerformedLog | AttackPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | BuffAppliedLog | BuffExpiredLog | HealthUpdateLog | CharacterDiedLog | StatChangedLog;
+export type CombatLog = FightDataLog | SpellPerformedLog | AttackPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | HealthUpdateLog | CharacterDiedLog | StatChangedLog | AuraChangedLog;
 export interface FightDataLog {
     type: "FightData";
     data: FightState;
@@ -111,5 +112,12 @@ export interface StatChangedLog {
     data: {
         charId: string;
         newStat: StatRecord;
+    };
+}
+export interface AuraChangedLog {
+    type: "AuraUpdate";
+    data: {
+        charId: string;
+        auras: AuraSnapshot[];
     };
 }
