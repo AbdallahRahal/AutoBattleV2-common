@@ -27,4 +27,6 @@ export enum AURA_IDS {
     Spoliation_Debuff = 'Spoliation_Debuff',
     Fulgurance_Buff = 'Fulgurance_Buff',
     Marquage = 'Marquage',
+    Renaissance_Stack = 'Renaissance_Stack',
+    Renaissance_Heal = 'Renaissance_Heal',
 }

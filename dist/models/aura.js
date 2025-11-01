@@ -15,4 +15,6 @@ var AURA_IDS;
     AURA_IDS["Spoliation_Debuff"] = "Spoliation_Debuff";
     AURA_IDS["Fulgurance_Buff"] = "Fulgurance_Buff";
     AURA_IDS["Marquage"] = "Marquage";
+    AURA_IDS["Renaissance_Stack"] = "Renaissance_Stack";
+    AURA_IDS["Renaissance_Heal"] = "Renaissance_Heal";
 })(AURA_IDS || (exports.AURA_IDS = AURA_IDS = {}));
