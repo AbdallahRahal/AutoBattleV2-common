@@ -31,5 +31,6 @@ export enum AURA_IDS {
     Renaissance_Heal = 'Renaissance_Heal',
     SceauSanguin_Stack = 'SceauSanguin_Stack',
     MarqueMortelle = 'MarqueMortelle',
-    Corruption_Stack = 'Corruption_Stack'
+    Corruption_Stack = 'Corruption_Stack',
+    Saignee_Aura = 'Saignee_Aura',
 }
