@@ -14,3 +14,4 @@ export * from "./userRaidTimelineEntry";
 export * from "./chatMessage";
 export * from "./relic";
 export * from "./aura";
+export * from "./status";
