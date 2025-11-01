@@ -23,5 +23,6 @@ export declare enum AURA_IDS {
     Fulgurance_Buff = "Fulgurance_Buff",
     Marquage = "Marquage",
     Renaissance_Stack = "Renaissance_Stack",
-    Renaissance_Heal = "Renaissance_Heal"
+    Renaissance_Heal = "Renaissance_Heal",
+    SceauSanguin_Stack = "SceauSanguin_Stack"
 }

@@ -17,4 +17,5 @@ var AURA_IDS;
     AURA_IDS["Marquage"] = "Marquage";
     AURA_IDS["Renaissance_Stack"] = "Renaissance_Stack";
     AURA_IDS["Renaissance_Heal"] = "Renaissance_Heal";
+    AURA_IDS["SceauSanguin_Stack"] = "SceauSanguin_Stack";
 })(AURA_IDS || (exports.AURA_IDS = AURA_IDS = {}));
