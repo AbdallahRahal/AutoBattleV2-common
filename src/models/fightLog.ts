@@ -3,6 +3,7 @@ import { ClassRecord } from "./character";
 import { DamageMeterState } from "./damageMeter";
 import { Item } from "./item";
 import { StatRecord } from "./stat";
+import { StatusSnapshot } from "./status";
 
 // --- FIGHT DATA ---
 
@@ -30,6 +31,7 @@ export interface FighterState {
     actualLifePoint: number;
     isAlive: boolean;
     auras: AuraSnapshot[]
+    statuses: StatusSnapshot[]
     figherType: "Player" | "Boss" | "Minion",
     invokerId: string | null
 }
