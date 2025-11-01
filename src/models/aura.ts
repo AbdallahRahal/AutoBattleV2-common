@@ -1,7 +1,7 @@
 
 export type AuraCategory = 'buff' | 'debuff' | 'hot' | 'dot'
 
-export type AuraApplyBehavior = 'refresh' | 'stack_only' | 'stack_and_refresh' | 'new_instance';
+export type AuraApplyBehavior = 'unique_by_caster' | 'unique' | 'unique_by_spell' | 'new_instance';
 
 
 export interface AuraSnapshot {
