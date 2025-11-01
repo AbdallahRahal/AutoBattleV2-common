@@ -8,4 +8,6 @@ var ClassName;
     ClassName["Guard"] = "Guard";
     ClassName["Invoker"] = "Invoker";
     ClassName["Doppelganger"] = "Doppelganger";
+    ClassName["Vampire"] = "Vampire";
+    ClassName["Enchantress"] = "Enchantress";
 })(ClassName || (exports.ClassName = ClassName = {}));

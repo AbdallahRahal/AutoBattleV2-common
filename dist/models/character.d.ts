@@ -6,7 +6,9 @@ export declare enum ClassName {
     Scout = "Scout",
     Guard = "Guard",
     Invoker = "Invoker",
-    Doppelganger = "Doppelganger"
+    Doppelganger = "Doppelganger",
+    Vampire = "Vampire",
+    Enchantress = "Enchantress"
 }
 export interface SkinModel {
     name: string;
