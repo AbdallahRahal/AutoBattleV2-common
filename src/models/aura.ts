@@ -35,4 +35,6 @@ export enum AURA_IDS {
     Saignee = 'Saignee',
     Virevolte_Stack = 'Virevolte_Stack',
     Virevolte_Dodge_Buff = 'Virevolte_Dodge_Buff',
+    Renouveau = 'Renouveau',
+
 }
