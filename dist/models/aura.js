@@ -23,6 +23,7 @@ var AURA_IDS;
     AURA_IDS["Saignee"] = "Saignee";
     AURA_IDS["Virevolte_Stack"] = "Virevolte_Stack";
     AURA_IDS["Virevolte_Dodge_Buff"] = "Virevolte_Dodge_Buff";
+    AURA_IDS["Virevolte_DamageReflect"] = "Virevolte_DamageReflect";
     AURA_IDS["Renouveau"] = "Renouveau";
     AURA_IDS["Paralysie"] = "Paralysie";
 })(AURA_IDS || (exports.AURA_IDS = AURA_IDS = {}));
