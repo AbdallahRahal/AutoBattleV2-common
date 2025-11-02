@@ -30,7 +30,7 @@ export interface FighterState {
     figherType: "Player" | "Boss" | "Minion";
     invokerId: string | null;
 }
-export type CombatLog = FightDataLog | SpellPerformedLog | AttackPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | HealthUpdateLog | CharacterDiedLog | StatChangedLog | AuraChangedLog;
+export type CombatLog = FightDataLog | SpellPerformedLog | AttackPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | HealthUpdateLog | CharacterDiedLog | StatChangedLog | AuraChangedLog | StatusChangedLog;
 export interface FightDataLog {
     type: "FightData";
     data: FightState;

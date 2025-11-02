@@ -48,7 +48,8 @@ export type CombatLog =
     | HealthUpdateLog
     | CharacterDiedLog
     | StatChangedLog
-    | AuraChangedLog;
+    | AuraChangedLog
+    | StatusChangedLog;
 
 // === FIGHT DATA ===
 export interface FightDataLog {
