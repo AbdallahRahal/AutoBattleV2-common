@@ -4,7 +4,6 @@ import { StatRecord } from "./stat";
 export interface Item {
     id: string;
     name: string,
-    description: string,
 
     stats: StatRecord;
     class: ClassRecord;
