@@ -170,6 +170,6 @@ export interface StatusChangedLog {
     type: "StatusUpdate";
     data: {
         charId: string,
-        auras: StatusSnapshot[]
+        statuses: StatusSnapshot[]
     }
 }
