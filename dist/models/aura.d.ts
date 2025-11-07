@@ -30,7 +30,7 @@ export declare enum AURA_IDS {
     Saignee = "Saignee",
     Virevolte_Stack = "Virevolte_Stack",
     Virevolte_Dodge_Buff = "Virevolte_Dodge_Buff",
-    Virevolte_Invincibility = "Virevolte_Invincibility",
+    Virevolte_Conversion = "Virevolte_Conversion",
     Renouveau = "Renouveau",
     Paralysie = "Paralysie"
 }
