@@ -27,4 +27,5 @@ var AURA_IDS;
     AURA_IDS["Renouveau"] = "Renouveau";
     AURA_IDS["Paralysie"] = "Paralysie";
     AURA_IDS["Frenesie"] = "Frenesie";
+    AURA_IDS["Frenesie_Bleed"] = "Frenesie_Bleed";
 })(AURA_IDS || (exports.AURA_IDS = AURA_IDS = {}));

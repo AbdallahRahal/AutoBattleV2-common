@@ -37,5 +37,6 @@ export enum AURA_IDS {
     Virevolte_Conversion = 'Virevolte_Conversion',
     Renouveau = 'Renouveau',
     Paralysie = 'Paralysie',
-    Frenesie = 'Frenesie'
+    Frenesie = 'Frenesie',
+    Frenesie_Bleed = 'Frenesie_Bleed'
 }
