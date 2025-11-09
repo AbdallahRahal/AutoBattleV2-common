@@ -10,6 +10,7 @@ export enum ClassName {
     Doppelganger = "Doppelganger",
     Vampire = "Vampire",
     Enchantress = "Enchantress",
+    Lycan = "Lycan",
 }
 export interface SkinModel {
     name: string,

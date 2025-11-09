@@ -10,4 +10,5 @@ var ClassName;
     ClassName["Doppelganger"] = "Doppelganger";
     ClassName["Vampire"] = "Vampire";
     ClassName["Enchantress"] = "Enchantress";
+    ClassName["Lycan"] = "Lycan";
 })(ClassName || (exports.ClassName = ClassName = {}));
