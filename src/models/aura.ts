@@ -39,5 +39,6 @@ export enum AURA_IDS {
     Paralysie = 'Paralysie',
     Frenesie = 'Frenesie',
     Frenesie_Saignement = 'Frenesie_Saignement',
-    Frenesie_Transformation = 'Frenesie_Transformation'
+    Frenesie_Transformation = 'Frenesie_Transformation',
+    AntiSoin = 'AntiSoin'
 }
