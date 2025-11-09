@@ -26,4 +26,5 @@ var AURA_IDS;
     AURA_IDS["Virevolte_Conversion"] = "Virevolte_Conversion";
     AURA_IDS["Renouveau"] = "Renouveau";
     AURA_IDS["Paralysie"] = "Paralysie";
+    AURA_IDS["Frenesie"] = "Frenesie";
 })(AURA_IDS || (exports.AURA_IDS = AURA_IDS = {}));
