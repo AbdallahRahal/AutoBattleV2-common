@@ -3,7 +3,6 @@ export type AuraCategory = 'buff' | 'debuff' | 'hot' | 'dot'
 
 export type AuraApplyBehavior = 'unique_by_caster' | 'unique' | 'unique_by_spell' | 'new_instance';
 
-
 export interface AuraSnapshot {
     auraId: AURA_IDS;
     name: string;
@@ -38,5 +37,4 @@ export enum AURA_IDS {
     Virevolte_Conversion = 'Virevolte_Conversion',
     Renouveau = 'Renouveau',
     Paralysie = 'Paralysie'
-
 }

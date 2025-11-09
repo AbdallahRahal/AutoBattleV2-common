@@ -3,5 +3,5 @@ export interface Team {
     id: string;
     name: string;
     member: Character[];
-    joinCode: number;
+    joinCode: string;
 }
