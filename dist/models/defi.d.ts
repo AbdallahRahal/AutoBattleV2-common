@@ -1,3 +1,4 @@
+import { StatKey } from "./stat";
 export interface DefiBoss {
     id: string;
     isLocked: boolean;
@@ -13,4 +14,10 @@ export interface DefiFight {
     hpPercentReached: number;
     bossHpAfter: number;
     fightDate: Date;
+}
+export interface DefiReward {
+    type: 'power' | 'gold' | 'statPoint' | 'classPoint' | 'skin' | 'reroll' | 'stat';
+    amount?: number;
+    itemId?: string;
+    statKey?: StatKey;
 }
