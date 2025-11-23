@@ -64,6 +64,7 @@ export interface Character {
     teamId: string | null
     lastTargettedDuel: number
     lastMerchantFight: number
+    lastDefiFight: number
     eloRating: number
 }
 

@@ -1,5 +1,6 @@
 import { Character } from "./character";
 import { CombatLog } from "./fightLog";
+export type FightType = 'TARGETTEDDUEL' | 'DAILYDUEL' | 'PROCDUEL' | 'RAID' | "TOURNAMENT" | "MERCHANTFIGHT" | "DEFI";
 export interface Fight {
     id: string;
     status: 'PENDING' | 'ACTIVE' | 'FINISH' | 'FAILED';
@@ -18,7 +19,7 @@ export interface Fight {
         dateTime: number;
         combatLog: CombatLog;
     }[];
-    type: 'TARGETTEDDUEL' | 'DAILYDUEL' | 'PROCDUEL' | 'RAID' | "TOURNAMENT" | "MERCHANTFIGHT";
+    type: FightType;
 }
 export interface FightTeam {
     teamId: string;

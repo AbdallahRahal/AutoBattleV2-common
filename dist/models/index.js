@@ -31,3 +31,4 @@ __exportStar(require("./chatMessage"), exports);
 __exportStar(require("./relic"), exports);
 __exportStar(require("./aura"), exports);
 __exportStar(require("./status"), exports);
+__exportStar(require("./defi"), exports);
