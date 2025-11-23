@@ -3,7 +3,6 @@ export interface DefiBoss {
     isLocked: boolean;
     lockedBy: string | null;
     lockedAt: Date | null;
-    bestDamageByCharacter: Record<string, number>;
 }
 export interface DefiFight {
     id: string;
