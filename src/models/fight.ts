@@ -1,5 +1,5 @@
 import { Character } from "./character";
-import { CombatLog } from "./fightLog";
+import { CombatLog, FightState } from "./fightLog";
 
 export type FightType = 'TARGETTEDDUEL' | 'DAILYDUEL' | 'PROCDUEL' | 'RAID' | "TOURNAMENT" | "MERCHANTFIGHT" | "DEFI";
 
@@ -18,6 +18,7 @@ export interface Fight {
     discordServerId?: string
     raidLevel?: number
     fightLog?: { dateTime: number, combatLog: CombatLog }[]
+    finalFightState?: FightState;
     type: FightType;
 
 }
