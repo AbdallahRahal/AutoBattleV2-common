@@ -3,6 +3,7 @@ export interface DefiBoss {
     isLocked: boolean;
     lockedBy: string | null;
     lockedAt: Date | null;
+    bestPercentByCharacter: Record<string, number>;
 }
 
 export interface DefiFight {
