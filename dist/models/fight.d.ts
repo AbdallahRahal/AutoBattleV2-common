@@ -18,7 +18,7 @@ export interface Fight {
     fightLog?: {
         dateTime: number;
         combatLog: CombatLog;
-    }[];
+    }[] | string;
     finalFightState?: FightState;
     type: FightType;
 }

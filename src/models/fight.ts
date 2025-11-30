@@ -17,7 +17,7 @@ export interface Fight {
     background: string,
     discordServerId?: string
     raidLevel?: number
-    fightLog?: { dateTime: number, combatLog: CombatLog }[]
+    fightLog?: { dateTime: number, combatLog: CombatLog }[] | string;
     finalFightState?: FightState;
     type: FightType;
 
