@@ -11,6 +11,7 @@ export interface User {
     relicId: string;
     accountStats: UserAccountStats;
     lastModelSelected: string;
+    role: 'user' | 'admin';
 }
 export interface UserAccountStats {
     charactersCreated: number;

@@ -19,6 +19,8 @@ export interface User {
     accountStats: UserAccountStats
 
     lastModelSelected: string;
+
+    role: 'user' | 'admin';
 }
 
 export interface UserAccountStats {
