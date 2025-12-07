@@ -16,3 +16,4 @@ export * from "./relic";
 export * from "./aura";
 export * from "./status";
 export * from "./defi";
+export * from "./classItemRules";
