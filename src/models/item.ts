@@ -4,12 +4,12 @@ import { StatRecord } from "./stat";
 export enum SpellTag {
     ACTIVE = 'active',
     PASSIVE = 'passive',
+    INVOCATION = 'invocation',
     AURA = 'aura',
     DEGAT = 'degat',
     SOIN = 'soin',
     BUFF = 'buff',
     DEBUFF = 'debuff',
-    INVOCATION = 'invocation',
 }
 
 export interface Item {

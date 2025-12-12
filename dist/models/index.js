@@ -33,3 +33,4 @@ __exportStar(require("./aura"), exports);
 __exportStar(require("./status"), exports);
 __exportStar(require("./defi"), exports);
 __exportStar(require("./classItemRules"), exports);
+__exportStar(require("./vote"), exports);
