@@ -15,7 +15,7 @@ export interface AuraSnapshot {
 
 export enum AURA_IDS {
     BouleDeFeu_Brulure = 'BouleDeFeu_Brulure',
-    Toxicite_Poison = 'Toxicite_Poison',
+    Saignement = 'Saignement',
     DanseDesOmbres_Buff = 'DanseDesOmbres_Buff',
     DrainSpirituel_Buff = 'DrainSpirituel_Buff',
     DrainSpirituel_Debuff = 'DrainSpirituel_Debuff',

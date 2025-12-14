@@ -4,7 +4,7 @@ exports.AURA_IDS = void 0;
 var AURA_IDS;
 (function (AURA_IDS) {
     AURA_IDS["BouleDeFeu_Brulure"] = "BouleDeFeu_Brulure";
-    AURA_IDS["Toxicite_Poison"] = "Toxicite_Poison";
+    AURA_IDS["Saignement"] = "Saignement";
     AURA_IDS["DanseDesOmbres_Buff"] = "DanseDesOmbres_Buff";
     AURA_IDS["DrainSpirituel_Buff"] = "DrainSpirituel_Buff";
     AURA_IDS["DrainSpirituel_Debuff"] = "DrainSpirituel_Debuff";
