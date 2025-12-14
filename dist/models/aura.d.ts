@@ -10,14 +10,13 @@ export interface AuraSnapshot {
     tickIntervalMs?: number;
 }
 export declare enum AURA_IDS {
-    BouleDeFeu_Brulure = "BouleDeFeu_Brulure",
+    Brulure = "Brulure",
     Saignement = "Saignement",
     DanseDesOmbres_Buff = "DanseDesOmbres_Buff",
     DrainSpirituel_Buff = "DrainSpirituel_Buff",
     DrainSpirituel_Debuff = "DrainSpirituel_Debuff",
     Fracture_Debuff = "Fracture_Debuff",
     BrulureSacree_Marque = "BrulureSacree_Marque",
-    InvocationShaman_Attaque_Brulure = "InvocationShaman_Attaque_Brulure",
     Spoliation_Buff = "Spoliation_Buff",
     Spoliation_Debuff = "Spoliation_Debuff",
     Fulgurance_Buff = "Fulgurance_Buff",
@@ -27,7 +26,6 @@ export declare enum AURA_IDS {
     SceauSanguin_Stack = "SceauSanguin_Stack",
     MarqueMortelle = "MarqueMortelle",
     Corruption_Stack = "Corruption_Stack",
-    Saignee = "Saignee",
     Virevolte_Stack = "Virevolte_Stack",
     Virevolte_Dodge_Buff = "Virevolte_Dodge_Buff",
     Virevolte_Conversion = "Virevolte_Conversion",
