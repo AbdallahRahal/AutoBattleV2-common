@@ -35,5 +35,6 @@ export declare enum AURA_IDS {
     Frenesie_Saignement = "Frenesie_Saignement",
     Frenesie_Transformation = "Frenesie_Transformation",
     AntiSoin = "AntiSoin",
-    EgideSacree_Stack = "EgideSacree_Stack"
+    EgideSacree_Stack = "EgideSacree_Stack",
+    Represailles_Buff = "Represailles_Buff"
 }

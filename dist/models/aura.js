@@ -29,4 +29,5 @@ var AURA_IDS;
     AURA_IDS["Frenesie_Transformation"] = "Frenesie_Transformation";
     AURA_IDS["AntiSoin"] = "AntiSoin";
     AURA_IDS["EgideSacree_Stack"] = "EgideSacree_Stack";
+    AURA_IDS["Represailles_Buff"] = "Represailles_Buff";
 })(AURA_IDS || (exports.AURA_IDS = AURA_IDS = {}));
