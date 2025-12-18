@@ -18,6 +18,8 @@ export interface User {
 
     accountStats: UserAccountStats
 
+    itemRanks: Record<number, number>;
+
     lastModelSelected: string;
 
     role: 'user' | 'admin';

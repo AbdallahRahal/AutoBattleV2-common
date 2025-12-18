@@ -10,6 +10,7 @@ export interface User {
     weaponSpellId: number[];
     relicId: string;
     accountStats: UserAccountStats;
+    itemRanks: Record<number, number>;
     lastModelSelected: string;
     role: 'user' | 'admin';
 }

@@ -23,4 +23,5 @@ export interface Item {
     spellId: number;
     icon: string;
     tags: SpellTag[];
+    rank: number;
 }
