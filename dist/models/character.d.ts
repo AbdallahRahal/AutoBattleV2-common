@@ -1,5 +1,4 @@
 import { Item } from "./item";
-import { Relic } from "./relic";
 import { StatAllocationPointDistribution, StatRecord } from "./stat";
 export declare enum ClassName {
     Arcanist = "Arcanist",
@@ -34,7 +33,11 @@ export interface Character {
     itemChoice: Record<string, Item[]>;
     skinModel: SkinModel;
     duelsLeft: number;
-    relic: Relic;
+    relicSlot1?: Item;
+    relicSlot2?: Item;
+    relicSlot3?: Item;
+    relicSlot4?: Item;
+    relicInventory: number[];
     statAllocationPoint: number;
     statAllocationPointDistribution: StatAllocationPointDistribution;
     classAllocationPoint: number;
