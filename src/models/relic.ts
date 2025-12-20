@@ -37,22 +37,19 @@ export interface RelicLine {
     id: string;
 }
 
+export interface RelicSlot {
+    spellId?: number;
+    isUnlocked: boolean; // Calculé à la volée, non enregistré en base
+}
+
 export interface Relic {
     id: string;
 
-    stats: StatRecord;
-    class: ClassRecord;
+    /** 4 slots pour équiper des relic spells */
+    slots: [RelicSlot, RelicSlot, RelicSlot, RelicSlot];
 
-    gold: number;
-    reroll: number;
-    statPoint: number;
-    classPoint: number;
-
-    /** Passifs simples portés par le compte (si peuplés côté API) */
-    items: Item[];
-
-    /** Options tirées cette semaine (3 lignes à choisir côté UI) */
-    weeklyLine?: RelicLine[];
+    /** Inventaire de tous les spellId de relicItem disponibles et débloqués */
+    inventory: number[];
 
     createdAt: string;
 }

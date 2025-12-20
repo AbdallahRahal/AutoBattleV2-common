@@ -12,6 +12,8 @@ export enum SpellTag {
     DEBUFF = 'debuff',
 }
 
+import { RelicLineRarity } from "./relic";
+
 export interface Item {
     id: string;
     name: string,
@@ -29,4 +31,5 @@ export interface Item {
     icon: string
     tags: SpellTag[]
     rank: number
+    rarity?: RelicLineRarity
 }

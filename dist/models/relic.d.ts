@@ -1,6 +1,5 @@
-import { ClassName, ClassRecord } from "./character";
-import { Item } from "./item";
-import { StatKey, StatRecord } from "./stat";
+import { ClassName } from "./character";
+import { StatKey } from "./stat";
 export declare enum RelicLineType {
     STAT = "STAT",// + Stat fixe (sauf vie)
     CLASS = "CLASS",// + 1 point de classe (fixe)
@@ -30,17 +29,15 @@ export interface RelicLine {
     optionId: string;
     id: string;
 }
+export interface RelicSlot {
+    spellId?: number;
+    isUnlocked: boolean;
+}
 export interface Relic {
     id: string;
-    stats: StatRecord;
-    class: ClassRecord;
-    gold: number;
-    reroll: number;
-    statPoint: number;
-    classPoint: number;
-    /** Passifs simples portés par le compte (si peuplés côté API) */
-    items: Item[];
-    /** Options tirées cette semaine (3 lignes à choisir côté UI) */
-    weeklyLine?: RelicLine[];
+    /** 4 slots pour équiper des relic spells */
+    slots: [RelicSlot, RelicSlot, RelicSlot, RelicSlot];
+    /** Inventaire de tous les spellId de relicItem disponibles et débloqués */
+    inventory: number[];
     createdAt: string;
 }
