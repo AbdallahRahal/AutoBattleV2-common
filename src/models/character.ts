@@ -45,7 +45,7 @@ export interface Character {
     relicSlot2?: Item;
     relicSlot3?: Item;
     relicSlot4?: Item;
-    relicInventory: number[]; // Array de spellId
+    relicInventory: Item[]; // Array de spellId
 
     statAllocationPoint: number
     statAllocationPointDistribution: StatAllocationPointDistribution

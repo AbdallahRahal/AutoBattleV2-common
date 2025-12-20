@@ -37,7 +37,7 @@ export interface Character {
     relicSlot2?: Item;
     relicSlot3?: Item;
     relicSlot4?: Item;
-    relicInventory: number[];
+    relicInventory: Item[];
     statAllocationPoint: number;
     statAllocationPointDistribution: StatAllocationPointDistribution;
     classAllocationPoint: number;
