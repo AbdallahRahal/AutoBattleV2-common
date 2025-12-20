@@ -8,7 +8,6 @@ export interface User {
     modelList: string[];
     randomModelCoin: number;
     weaponSpellId: number[];
-    relicId: string;
     accountStats: UserAccountStats;
     itemRanks: Record<number, number>;
     lastModelSelected: string;

@@ -1,5 +1,6 @@
 import { ClassRecord } from "./character";
 import { StatRecord } from "./stat";
+import { RelicLineRarity } from "./relic";
 export declare enum SpellTag {
     ACTIVE = "active",
     PASSIVE = "passive",
@@ -10,7 +11,6 @@ export declare enum SpellTag {
     BUFF = "buff",
     DEBUFF = "debuff"
 }
-import { RelicLineRarity } from "./relic";
 export interface Item {
     id: string;
     name: string;

@@ -1,19 +1,5 @@
 // packages/common/models/relic.ts
 
-import { ClassName, ClassRecord } from "./character";
-import { Item } from "./item";
-import { StatKey, StatRecord } from "./stat";
-
-export enum RelicLineType {
-    STAT = "STAT",            // + Stat fixe (sauf vie)
-    CLASS = "CLASS",          // + 1 point de classe (fixe)
-    GOLD = "GOLD",            // + Gold
-    REROLL = "REROLL",        // + Relance
-    STAT_POINT = "STAT_POINT",// + 1 point de stat à répartir
-    CLASS_POINT = "CLASS_POINT", // + 1 point de classe à répartir
-    SPELL = "SPELL",          // + passif simple (spellId)
-}
-
 export enum RelicLineRarity {
     COMMON = "COMMON",
     RARE = "RARE",
@@ -21,35 +7,14 @@ export enum RelicLineRarity {
     LEGENDARY = "LEGENDARY",
 }
 
-export type RelicTarget = StatKey | ClassName;
-
-/**
- * Une proposition de ligne de relique hebdomadaire
- */
-export interface RelicLine {
-    type: RelicLineType;
-    value: number;
-    rarity: RelicLineRarity;
-    spellId?: number;
-    spellName?: string
-    target?: RelicTarget;
-    optionId: string;
-    id: string;
-}
-
 export interface RelicSlot {
     spellId?: number;
-    isUnlocked: boolean; // Calculé à la volée, non enregistré en base
+    isUnlocked: boolean; // Calculé à la volée, pas en base
 }
 
 export interface Relic {
     id: string;
-
-    /** 4 slots pour équiper des relic spells */
-    slots: [RelicSlot, RelicSlot, RelicSlot, RelicSlot];
-
-    /** Inventaire de tous les spellId de relicItem disponibles et débloqués */
-    inventory: number[];
-
+    slots: RelicSlot[]; // 4 slots
+    inventory: number[]; // Array de spellId
     createdAt: string;
 }
