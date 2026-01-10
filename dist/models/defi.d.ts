@@ -16,7 +16,7 @@ export interface DefiFight {
     fightDate: Date;
 }
 export interface DefiReward {
-    type: 'power' | 'gold' | 'statPoint' | 'classPoint' | 'skin' | 'reroll' | 'stat';
+    type: 'power' | 'gold' | 'statPoint' | 'classPoint' | 'skin' | 'reroll' | 'stat' | 'relic';
     amount?: number;
     itemId?: string;
     statKey?: StatKey;
