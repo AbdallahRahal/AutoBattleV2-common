@@ -21,6 +21,7 @@ export interface Fight {
     }[] | string;
     finalFightState?: FightState;
     type: FightType;
+    deltaElo?: Record<string, number>;
 }
 export interface FightTeam {
     teamId: string;
