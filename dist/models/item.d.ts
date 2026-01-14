@@ -20,6 +20,7 @@ export interface Item {
     isWeapon: boolean;
     isRelicItem: boolean;
     dropable: boolean;
+    needRandomClass: boolean;
     inSeasonBlackList: boolean;
     spellId: number;
     icon: string;
