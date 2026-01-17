@@ -10,6 +10,7 @@ export declare enum ClassName {
     Enchantress = "Enchantress",
     Lycan = "Lycan"
 }
+export declare const defaultCharInitialClass: ClassRecord;
 export interface SkinModel {
     name: string;
     stats: Partial<StatRecord>;

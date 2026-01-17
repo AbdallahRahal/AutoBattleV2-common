@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ClassName = void 0;
+exports.defaultCharInitialClass = exports.ClassName = void 0;
 var ClassName;
 (function (ClassName) {
     ClassName["Arcanist"] = "Arcanist";
@@ -12,3 +12,7 @@ var ClassName;
     ClassName["Enchantress"] = "Enchantress";
     ClassName["Lycan"] = "Lycan";
 })(ClassName || (exports.ClassName = ClassName = {}));
+exports.defaultCharInitialClass = Object.values(ClassName).reduce((acc, cls) => {
+    acc[cls] = 0;
+    return acc;
+}, {});

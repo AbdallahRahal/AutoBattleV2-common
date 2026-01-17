@@ -11,6 +11,12 @@ export enum ClassName {
     Enchantress = "Enchantress",
     Lycan = "Lycan",
 }
+
+export const defaultCharInitialClass: ClassRecord = Object.values(ClassName).reduce((acc: ClassRecord, cls: ClassName) => {
+    acc[cls] = 0;
+    return acc;
+}, {} as ClassRecord);
+
 export interface SkinModel {
     name: string,
     stats: Partial<StatRecord>

@@ -8,3 +8,4 @@ export type StatAllocationPointDistribution = Record<StatAllocationPointKey, num
 export type StatAllocationPointKey = 'PowerAllocationPoint' | 'MaxLifePointMultiplierAllocationPoint' | 'HasteAllocationPoint' | 'CritChanceAllocationPoint' | 'CritPowerAllocationPoint' | 'DodgeAllocationPoint' | 'ResistanceAllocationPoint';
 export declare const allocationPointValue: Partial<Record<MainStatKey, number>>;
 export declare const emptyStatRecord: StatRecord;
+export declare const defaultCharInitialStats: StatRecord;
