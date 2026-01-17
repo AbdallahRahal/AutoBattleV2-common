@@ -21,8 +21,7 @@ export type MainStatKey =
 
 export type CapStatRecord = Record<CapStatKey, number>;
 export type CapStatKey =
-    'GlobalStatCap'
-    | 'DodgeCap'
+    'DodgeCap'
     | 'ResistanceCap'
     | 'HasteCap'
     | 'CritChanceCap'
