@@ -38,5 +38,6 @@ export declare enum AURA_IDS {
     EgideSacree_Stack = "EgideSacree_Stack",
     Represailles_Buff = "Represailles_Buff",
     BenedictionDesAnciens = "BenedictionDesAnciens",
-    Affutage = "Affutage"
+    Affutage = "Affutage",
+    Gel = "Gel"
 }
