@@ -76,8 +76,8 @@ export const defaultCharInitialStats: StatRecord = {
     Haste: 0,
     CritChance: 5,
     CritPower: 0,
-    Dodge: 0,
-    Resistance: 0,
+    Dodge: 5,
+    Resistance: 5,
 
     MaxLifePointMultiplier: 0,
     PowerMultiplier: 0,
