@@ -54,5 +54,7 @@ export interface Character {
     lastMerchantFight: number;
     lastDefiFight: number;
     eloRating: number;
+    hasFullRerolled: boolean;
+    pendingFullRerollItems?: Item[];
 }
 export type ClassAllocationPointDistribution = Record<ClassName, number>;
