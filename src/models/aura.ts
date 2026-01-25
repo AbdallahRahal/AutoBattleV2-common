@@ -43,5 +43,6 @@ export enum AURA_IDS {
     Represailles_Buff = 'Represailles_Buff',
     BenedictionDesAnciens = 'BenedictionDesAnciens',
     Affutage = 'Affutage',
-    Gel = 'Gel'
+    Gel = 'Gel',
+    Fragilite = 'Fragilite'
 }
