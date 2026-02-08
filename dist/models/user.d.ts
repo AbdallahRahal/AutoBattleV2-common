@@ -1,7 +1,7 @@
 import { ClassName } from "./character";
 export interface User {
     id: string;
-    discordId: string;
+    discordId: string | null;
     username: string;
     email: string;
     canTagOnMessage: boolean;

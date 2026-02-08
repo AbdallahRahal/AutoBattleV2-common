@@ -19,7 +19,7 @@ export type ClassRecord = Record<ClassName, number>;
 export interface Character {
     id: string;
     ownerId: string;
-    ownerDiscordId: string;
+    ownerDiscordId: string | null;
     baseDiscordServerId: string;
     name: string;
     level: number;
