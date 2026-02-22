@@ -1,6 +1,5 @@
-import { ClassRecord } from "./character";
-import { StatRecord } from "./stat";
-import { RelicLineRarity } from "./relic";
+import { ClassRecord } from './character';
+import { StatRecord } from './stat';
 
 export enum SpellTag {
     ACTIVE = 'active',
@@ -15,19 +14,19 @@ export enum SpellTag {
 
 export interface Item {
     id: string;
-    name: string,
+    name: string;
 
     stats: StatRecord;
     class: ClassRecord;
-    isClassItem: boolean
-    isWeapon: boolean
-    isRelicItem: boolean
-    dropable: boolean
-    needRandomClass: boolean
-    inSeasonBlackList: boolean
-    spellId: number
-    icon: string
-    tags: SpellTag[]
-    rank: number
-    rarity?: RelicLineRarity
+    isClassItem: boolean;
+    isWeapon: boolean;
+    isRelicItem: boolean;
+    dropable: boolean;
+    needRandomClass: boolean;
+    inSeasonBlackList: boolean;
+    spellId: number;
+    icon: string;
+    tags: SpellTag[];
+    rank: number;
+    //rarity?: RelicLineRarity
 }
