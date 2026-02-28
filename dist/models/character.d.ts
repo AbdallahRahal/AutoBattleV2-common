@@ -11,7 +11,7 @@ export declare enum ClassName {
     Lycan = "Lycan",
     Joker = "Joker"
 }
-export declare const defaultCharInitialClass: ClassRecord;
+export declare const zeroClassRecord: ClassRecord;
 export interface SkinModel {
     name: string;
     stats: Partial<StatRecord>;

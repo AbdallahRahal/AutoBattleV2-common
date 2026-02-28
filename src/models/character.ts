@@ -13,12 +13,13 @@ export enum ClassName {
     Joker = 'Joker',
 }
 
-export const defaultCharInitialClass: ClassRecord = Object.values(
-    ClassName,
-).reduce((acc: ClassRecord, cls: ClassName) => {
-    acc[cls] = 0;
-    return acc;
-}, {} as ClassRecord);
+export const zeroClassRecord: ClassRecord = Object.values(ClassName).reduce(
+    (acc: ClassRecord, cls: ClassName) => {
+        acc[cls] = 0;
+        return acc;
+    },
+    {} as ClassRecord,
+);
 
 export interface SkinModel {
     name: string;
