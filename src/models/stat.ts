@@ -1,10 +1,9 @@
-
 export type StatRecord = Record<StatKey, number>;
 export type StatKey = MainStatKey | CapStatKey;
 
 export type MainStatRecord = Record<MainStatKey, number>;
 export type MainStatKey =
-    'MaxLifePoint'
+    | 'MaxLifePoint'
     | 'Haste'
     | 'Dodge'
     | 'CritChance'
@@ -17,26 +16,30 @@ export type MainStatKey =
     | 'CritPowerMultiplier'
     | 'DodgeMultiplier'
     | 'ResistanceMultiplier'
-    | 'MaxLifePointMultiplier';
+    | 'MaxLifePointMultiplier'
+    | 'LuckyHit';
 
 export type CapStatRecord = Record<CapStatKey, number>;
 export type CapStatKey =
-    'DodgeCap'
+    | 'DodgeCap'
     | 'ResistanceCap'
     | 'HasteCap'
-    | 'CritChanceCap'
+    | 'CritChanceCap';
 
-
-export type StatAllocationPointDistribution = Record<StatAllocationPointKey, number>;
+export type StatAllocationPointDistribution = Record<
+    StatAllocationPointKey,
+    number
+>;
 
 export type StatAllocationPointKey =
-    'PowerAllocationPoint'
+    | 'PowerAllocationPoint'
     | 'MaxLifePointMultiplierAllocationPoint'
     | 'HasteAllocationPoint'
     | 'CritChanceAllocationPoint'
     | 'CritPowerAllocationPoint'
     | 'DodgeAllocationPoint'
-    | 'ResistanceAllocationPoint';
+    | 'ResistanceAllocationPoint'
+    | 'LuckyHitAllocationPoint';
 
 export const allocationPointValue: Partial<Record<MainStatKey, number>> = {
     MaxLifePointMultiplier: 0.025,
@@ -46,8 +49,8 @@ export const allocationPointValue: Partial<Record<MainStatKey, number>> = {
     CritChance: 1,
     CritPower: 1,
     Resistance: 1.5,
-}
-
+    LuckyHit: 1,
+};
 
 export const emptyStatRecord: StatRecord = {
     MaxLifePoint: 0,
@@ -67,7 +70,8 @@ export const emptyStatRecord: StatRecord = {
     DodgeCap: 0,
     ResistanceCap: 0,
     HasteCap: 0,
-    CritChanceCap: 0
+    CritChanceCap: 0,
+    LuckyHit: 0,
 };
 
 export const defaultCharInitialStats: StatRecord = {
@@ -91,5 +95,6 @@ export const defaultCharInitialStats: StatRecord = {
     DodgeCap: 50,
     ResistanceCap: 50,
     HasteCap: 50,
-    CritChanceCap: 100
-}
+    CritChanceCap: 100,
+    LuckyHit: 0,
+};

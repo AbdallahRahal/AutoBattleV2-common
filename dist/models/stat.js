@@ -9,6 +9,7 @@ exports.allocationPointValue = {
     CritChance: 1,
     CritPower: 1,
     Resistance: 1.5,
+    LuckyHit: 1,
 };
 exports.emptyStatRecord = {
     MaxLifePoint: 0,
@@ -28,7 +29,8 @@ exports.emptyStatRecord = {
     DodgeCap: 0,
     ResistanceCap: 0,
     HasteCap: 0,
-    CritChanceCap: 0
+    CritChanceCap: 0,
+    LuckyHit: 0,
 };
 exports.defaultCharInitialStats = {
     MaxLifePoint: 750,
@@ -48,5 +50,6 @@ exports.defaultCharInitialStats = {
     DodgeCap: 50,
     ResistanceCap: 50,
     HasteCap: 50,
-    CritChanceCap: 100
+    CritChanceCap: 100,
+    LuckyHit: 0,
 };
