@@ -1,4 +1,4 @@
-import { ClassName } from "./character";
+import { ClassName } from './character';
 export interface ClassItemEquipRule {
     class: ClassName;
     minPoints: number;

@@ -1,4 +1,4 @@
-import { ClassName } from "./character";
+import { ClassName } from './character';
 
 export interface ClassItemEquipRule {
     class: ClassName;
@@ -26,20 +26,17 @@ export const classItemEquipRule: ClassItemEquipRule[] = [
         class: ClassName.Invoker,
         minPoints: CLASS_PLAYED_THRESHOLD,
         itemSpellId: 1004,
-    }
-    ,
+    },
     {
         class: ClassName.Doppelganger,
         minPoints: CLASS_PLAYED_THRESHOLD,
         itemSpellId: 1005,
-    }
-    ,
+    },
     {
         class: ClassName.Vampire,
         minPoints: CLASS_PLAYED_THRESHOLD,
         itemSpellId: 1006,
-    }
-    ,
+    },
     {
         class: ClassName.Enchantress,
         minPoints: CLASS_PLAYED_THRESHOLD,
@@ -49,5 +46,10 @@ export const classItemEquipRule: ClassItemEquipRule[] = [
         class: ClassName.Lycan,
         minPoints: CLASS_PLAYED_THRESHOLD,
         itemSpellId: 1008,
-    }
+    },
+    {
+        class: ClassName.Joker,
+        minPoints: CLASS_PLAYED_THRESHOLD,
+        itemSpellId: 1009,
+    },
 ];

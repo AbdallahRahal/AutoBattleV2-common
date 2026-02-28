@@ -11,6 +11,7 @@ var ClassName;
     ClassName["Vampire"] = "Vampire";
     ClassName["Enchantress"] = "Enchantress";
     ClassName["Lycan"] = "Lycan";
+    ClassName["Joker"] = "Joker";
 })(ClassName || (exports.ClassName = ClassName = {}));
 exports.defaultCharInitialClass = Object.values(ClassName).reduce((acc, cls) => {
     acc[cls] = 0;

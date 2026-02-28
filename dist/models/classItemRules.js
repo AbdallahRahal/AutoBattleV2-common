@@ -43,5 +43,10 @@ exports.classItemEquipRule = [
         class: character_1.ClassName.Lycan,
         minPoints: exports.CLASS_PLAYED_THRESHOLD,
         itemSpellId: 1008,
-    }
+    },
+    {
+        class: character_1.ClassName.Joker,
+        minPoints: exports.CLASS_PLAYED_THRESHOLD,
+        itemSpellId: 1009,
+    },
 ];

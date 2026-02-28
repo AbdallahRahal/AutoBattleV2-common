@@ -1,5 +1,5 @@
-import { Item } from "./item";
-import { StatAllocationPointDistribution, StatRecord } from "./stat";
+import { Item } from './item';
+import { StatAllocationPointDistribution, StatRecord } from './stat';
 export declare enum ClassName {
     Arcanist = "Arcanist",
     Scout = "Scout",
@@ -8,7 +8,8 @@ export declare enum ClassName {
     Doppelganger = "Doppelganger",
     Vampire = "Vampire",
     Enchantress = "Enchantress",
-    Lycan = "Lycan"
+    Lycan = "Lycan",
+    Joker = "Joker"
 }
 export declare const defaultCharInitialClass: ClassRecord;
 export interface SkinModel {

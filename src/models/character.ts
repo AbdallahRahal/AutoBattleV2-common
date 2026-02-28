@@ -1,25 +1,28 @@
-import { Item } from "./item";
-import { StatAllocationPointDistribution, StatKey, StatRecord } from "./stat";
+import { Item } from './item';
+import { StatAllocationPointDistribution, StatKey, StatRecord } from './stat';
 
 export enum ClassName {
-    Arcanist = "Arcanist",
-    Scout = "Scout",
-    Guard = "Guard",
-    Invoker = "Invoker",
-    Doppelganger = "Doppelganger",
-    Vampire = "Vampire",
-    Enchantress = "Enchantress",
-    Lycan = "Lycan",
+    Arcanist = 'Arcanist',
+    Scout = 'Scout',
+    Guard = 'Guard',
+    Invoker = 'Invoker',
+    Doppelganger = 'Doppelganger',
+    Vampire = 'Vampire',
+    Enchantress = 'Enchantress',
+    Lycan = 'Lycan',
+    Joker = 'Joker',
 }
 
-export const defaultCharInitialClass: ClassRecord = Object.values(ClassName).reduce((acc: ClassRecord, cls: ClassName) => {
+export const defaultCharInitialClass: ClassRecord = Object.values(
+    ClassName,
+).reduce((acc: ClassRecord, cls: ClassName) => {
     acc[cls] = 0;
     return acc;
 }, {} as ClassRecord);
 
 export interface SkinModel {
-    name: string,
-    stats: Partial<StatRecord>
+    name: string;
+    stats: Partial<StatRecord>;
 }
 
 export type ClassRecord = Record<ClassName, number>;
@@ -53,32 +56,30 @@ export interface Character {
     relicSlot4?: Item;
     relicInventory: Item[]; // Array de spellId
 
-    statAllocationPoint: number
-    statAllocationPointDistribution: StatAllocationPointDistribution
+    statAllocationPoint: number;
+    statAllocationPointDistribution: StatAllocationPointDistribution;
 
-    classAllocationPoint: number
-    classAllocationPointDistribution: ClassAllocationPointDistribution
+    classAllocationPoint: number;
+    classAllocationPointDistribution: ClassAllocationPointDistribution;
 
+    procDuelCount: number;
+    procDuelWin: number;
 
-    procDuelCount: number
-    procDuelWin: number
+    dailyDuelCount: number;
+    dailyDuelWin: number;
 
-    dailyDuelCount: number
-    dailyDuelWin: number
-
-    itemReroll: number
+    itemReroll: number;
 
     figherType: 'Player' | 'Boss' | 'Minion';
 
-    teamId: string | null
-    lastTargettedDuel: number
-    lastMerchantFight: number
-    lastDefiFight: number
-    eloRating: number
+    teamId: string | null;
+    lastTargettedDuel: number;
+    lastMerchantFight: number;
+    lastDefiFight: number;
+    eloRating: number;
 
-    hasFullRerolled: boolean
-    pendingFullRerollItems?: Item[]
+    hasFullRerolled: boolean;
+    pendingFullRerollItems?: Item[];
 }
-
 
 export type ClassAllocationPointDistribution = Record<ClassName, number>;
