@@ -34,4 +34,5 @@ var AURA_IDS;
     AURA_IDS["Affutage"] = "Affutage";
     AURA_IDS["Gel"] = "Gel";
     AURA_IDS["Fragilite"] = "Fragilite";
+    AURA_IDS["CadenceMystique"] = "CadenceMystique";
 })(AURA_IDS || (exports.AURA_IDS = AURA_IDS = {}));
