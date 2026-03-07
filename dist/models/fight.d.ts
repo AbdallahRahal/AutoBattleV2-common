@@ -1,6 +1,6 @@
-import { Character } from "./character";
-import { CombatLog, FightState } from "./fightLog";
-export type FightType = 'TARGETTEDDUEL' | 'DAILYDUEL' | 'PROCDUEL' | 'RAID' | "TOURNAMENT" | "MERCHANTFIGHT" | "DEFI";
+import { Character } from './character';
+import { CombatLog, FightState } from './fightLog';
+export type FightType = 'TARGETTEDDUEL' | 'DAILYDUEL' | 'PROCDUEL' | 'RAID' | 'TOURNAMENT' | 'MERCHANTFIGHT' | 'DEFI' | 'STATISTICS';
 export interface Fight {
     id: string;
     status: 'PENDING' | 'ACTIVE' | 'FINISH' | 'FAILED';
