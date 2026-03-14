@@ -1,3 +1,4 @@
+import { AnimationVFX } from "./animationVFX";
 import { AuraSnapshot } from "./aura";
 import { ClassRecord } from "./character";
 import { DamageMeterState } from "./damageMeter";
@@ -30,7 +31,7 @@ export interface FighterState {
     figherType: "Player" | "Boss" | "Minion";
     invokerId: string | null;
 }
-export type CombatLog = FightDataLog | SpellPerformedLog | AttackPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | HealthUpdateLog | CharacterDiedLog | StatChangedLog | AuraChangedLog | StatusChangedLog;
+export type CombatLog = FightDataLog | SpellPerformedLog | AttackPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | HealthUpdateLog | CharacterDiedLog | StatChangedLog | AuraChangedLog | StatusChangedLog | AnimationPerformedLog;
 export interface FightDataLog {
     type: "FightData";
     data: FightState;
@@ -129,5 +130,13 @@ export interface StatusChangedLog {
     data: {
         charId: string;
         statuses: StatusSnapshot[];
+    };
+}
+export interface AnimationPerformedLog {
+    type: "AnimationPerformed";
+    data: {
+        animationVFX: AnimationVFX;
+        sourceId: string;
+        targetId: string[];
     };
 }

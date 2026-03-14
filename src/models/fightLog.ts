@@ -1,3 +1,4 @@
+import { AnimationVFX } from "./animationVFX";
 import { AuraSnapshot } from "./aura";
 import { ClassRecord } from "./character";
 import { DamageMeterState } from "./damageMeter";
@@ -49,7 +50,8 @@ export type CombatLog =
     | CharacterDiedLog
     | StatChangedLog
     | AuraChangedLog
-    | StatusChangedLog;
+    | StatusChangedLog
+    | AnimationPerformedLog;
 
 // === FIGHT DATA ===
 export interface FightDataLog {
@@ -173,4 +175,13 @@ export interface StatusChangedLog {
         charId: string,
         statuses: StatusSnapshot[]
     }
+}
+
+export interface AnimationPerformedLog {
+    type: "AnimationPerformed";
+    data: {
+        animationVFX: AnimationVFX;
+        sourceId: string;
+        targetId: string[];
+    };
 }
