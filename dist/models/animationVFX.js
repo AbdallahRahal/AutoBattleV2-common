@@ -8,4 +8,5 @@ var AnimationVFX;
     AnimationVFX["TIR_MORTEL"] = "TIR_MORTEL";
     AnimationVFX["INVOCATION_ARCHER_ATTAQUE"] = "INVOCATION_ARCHER_ATTAQUE";
     AnimationVFX["PLUIE_DE_GEL"] = "PLUIE_DE_GEL";
+    AnimationVFX["PLUIE_DE_GEL_FROZEN_HIT"] = "PLUIE_DE_GEL_FROZEN_HIT";
 })(AnimationVFX || (exports.AnimationVFX = AnimationVFX = {}));
