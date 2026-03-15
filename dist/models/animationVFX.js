@@ -5,4 +5,5 @@ var AnimationVFX;
 (function (AnimationVFX) {
     AnimationVFX["FIREBALL"] = "FIREBALL";
     AnimationVFX["BRULURE_SACREE"] = "BRULURE_SACREE";
+    AnimationVFX["TIR_MORTEL"] = "TIR_MORTEL";
 })(AnimationVFX || (exports.AnimationVFX = AnimationVFX = {}));
