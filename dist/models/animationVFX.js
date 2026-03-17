@@ -10,4 +10,6 @@ var AnimationVFX;
     AnimationVFX["PLUIE_DE_GEL"] = "PLUIE_DE_GEL";
     AnimationVFX["PLUIE_DE_GEL_FROZEN_HIT"] = "PLUIE_DE_GEL_FROZEN_HIT";
     AnimationVFX["FRACTURE"] = "FRACTURE";
+    AnimationVFX["RESONANCE"] = "RESONANCE";
+    AnimationVFX["CHATIMENT_LUMINEUX"] = "CHATIMENT_LUMINEUX";
 })(AnimationVFX || (exports.AnimationVFX = AnimationVFX = {}));
