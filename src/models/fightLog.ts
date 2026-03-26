@@ -1,10 +1,10 @@
-import { AnimationVFX } from "./animationVFX";
-import { AuraSnapshot } from "./aura";
-import { ClassRecord } from "./character";
-import { DamageMeterState } from "./damageMeter";
-import { Item } from "./item";
-import { StatRecord } from "./stat";
-import { StatusSnapshot } from "./status";
+import { AnimationVFX } from './animationVFX';
+import { AuraSnapshot } from './aura';
+import { ClassRecord } from './character';
+import { DamageMeterState } from './damageMeter';
+import { Item } from './item';
+import { StatRecord } from './stat';
+import { StatusSnapshot } from './status';
 
 // --- FIGHT DATA ---
 
@@ -31,10 +31,13 @@ export interface FighterState {
     maxLifePoint: number;
     actualLifePoint: number;
     isAlive: boolean;
-    auras: AuraSnapshot[]
-    statuses: StatusSnapshot[]
-    figherType: "Player" | "Boss" | "Minion",
-    invokerId: string | null
+    auras: AuraSnapshot[];
+    statuses: StatusSnapshot[];
+    figherType: 'Player' | 'Boss' | 'Minion';
+    invokerId: string | null;
+    currentTurn: number;
+    turnProgressPercent: number;
+    invocations: FighterState[];
 }
 
 // --- LOG TYPES ---
@@ -55,13 +58,13 @@ export type CombatLog =
 
 // === FIGHT DATA ===
 export interface FightDataLog {
-    type: "FightData";
+    type: 'FightData';
     data: FightState;
 }
 
 // === SPELL ===
 export interface SpellPerformedLog {
-    type: "SpellPerformed";
+    type: 'SpellPerformed';
     data: {
         sourceId: string;
         targetId: string[];
@@ -71,7 +74,7 @@ export interface SpellPerformedLog {
 }
 
 export interface AttackPerformedLog {
-    type: "AttackPerformed";
+    type: 'AttackPerformed';
     data: {
         sourceId: string;
         targetId: string[];
@@ -80,23 +83,21 @@ export interface AttackPerformedLog {
     };
 }
 
-
 // === DAMAGE ===
 export interface DamageDealtLog {
-    type: "DamageDealt";
+    type: 'DamageDealt';
     data: {
         sourceId: string;
         targetId: string;
         amount: number;
         isCrit: boolean;
         spellName: string;
-
     };
 }
 
 // === HEAL ===
 export interface HealPerformedLog {
-    type: "HealPerformed";
+    type: 'HealPerformed';
     data: {
         sourceId: string;
         targetId: string;
@@ -108,7 +109,7 @@ export interface HealPerformedLog {
 
 // === DODGE ===
 export interface DodgePerformedLog {
-    type: "DodgePerformed";
+    type: 'DodgePerformed';
     data: {
         dodgerId: string;
     };
@@ -116,7 +117,7 @@ export interface DodgePerformedLog {
 
 // === BUFF APPLIED ===
 export interface BuffAppliedLog {
-    type: "BuffApplied";
+    type: 'BuffApplied';
     data: {
         charId: string;
         buffName: string;
@@ -126,7 +127,7 @@ export interface BuffAppliedLog {
 
 // === BUFF EXPIRED ===
 export interface BuffExpiredLog {
-    type: "BuffExpired";
+    type: 'BuffExpired';
     data: {
         charId: string;
         buffName: string;
@@ -136,7 +137,7 @@ export interface BuffExpiredLog {
 
 // === HEALTH UPDATE ===
 export interface HealthUpdateLog {
-    type: "HealthUpdate";
+    type: 'HealthUpdate';
     data: {
         charId: string;
         currentHealth: number;
@@ -146,39 +147,38 @@ export interface HealthUpdateLog {
 
 // === CHARACTER DIED ===
 export interface CharacterDiedLog {
-    type: "CharacterDied";
+    type: 'CharacterDied';
     data: {
         charId: string;
         killerId: string;
     };
 }
 export interface StatChangedLog {
-    type: "StatChanged";
+    type: 'StatChanged';
     data: {
-        charId: string,
-        newStat: StatRecord
-    }
+        charId: string;
+        newStat: StatRecord;
+    };
 }
 
-
 export interface AuraChangedLog {
-    type: "AuraUpdate";
+    type: 'AuraUpdate';
     data: {
-        charId: string,
-        auras: AuraSnapshot[]
-    }
+        charId: string;
+        auras: AuraSnapshot[];
+    };
 }
 
 export interface StatusChangedLog {
-    type: "StatusUpdate";
+    type: 'StatusUpdate';
     data: {
-        charId: string,
-        statuses: StatusSnapshot[]
-    }
+        charId: string;
+        statuses: StatusSnapshot[];
+    };
 }
 
 export interface AnimationPerformedLog {
-    type: "AnimationPerformed";
+    type: 'AnimationPerformed';
     data: {
         animationVFX: AnimationVFX;
         sourceId: string;

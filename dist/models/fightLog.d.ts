@@ -1,10 +1,10 @@
-import { AnimationVFX } from "./animationVFX";
-import { AuraSnapshot } from "./aura";
-import { ClassRecord } from "./character";
-import { DamageMeterState } from "./damageMeter";
-import { Item } from "./item";
-import { StatRecord } from "./stat";
-import { StatusSnapshot } from "./status";
+import { AnimationVFX } from './animationVFX';
+import { AuraSnapshot } from './aura';
+import { ClassRecord } from './character';
+import { DamageMeterState } from './damageMeter';
+import { Item } from './item';
+import { StatRecord } from './stat';
+import { StatusSnapshot } from './status';
 export interface FightState {
     teams: TeamsState[];
     damageMeter: DamageMeterState;
@@ -28,16 +28,19 @@ export interface FighterState {
     isAlive: boolean;
     auras: AuraSnapshot[];
     statuses: StatusSnapshot[];
-    figherType: "Player" | "Boss" | "Minion";
+    figherType: 'Player' | 'Boss' | 'Minion';
     invokerId: string | null;
+    currentTurn: number;
+    turnProgressPercent: number;
+    invocations: FighterState[];
 }
 export type CombatLog = FightDataLog | SpellPerformedLog | AttackPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | HealthUpdateLog | CharacterDiedLog | StatChangedLog | AuraChangedLog | StatusChangedLog | AnimationPerformedLog;
 export interface FightDataLog {
-    type: "FightData";
+    type: 'FightData';
     data: FightState;
 }
 export interface SpellPerformedLog {
-    type: "SpellPerformed";
+    type: 'SpellPerformed';
     data: {
         sourceId: string;
         targetId: string[];
@@ -46,7 +49,7 @@ export interface SpellPerformedLog {
     };
 }
 export interface AttackPerformedLog {
-    type: "AttackPerformed";
+    type: 'AttackPerformed';
     data: {
         sourceId: string;
         targetId: string[];
@@ -55,7 +58,7 @@ export interface AttackPerformedLog {
     };
 }
 export interface DamageDealtLog {
-    type: "DamageDealt";
+    type: 'DamageDealt';
     data: {
         sourceId: string;
         targetId: string;
@@ -65,7 +68,7 @@ export interface DamageDealtLog {
     };
 }
 export interface HealPerformedLog {
-    type: "HealPerformed";
+    type: 'HealPerformed';
     data: {
         sourceId: string;
         targetId: string;
@@ -75,13 +78,13 @@ export interface HealPerformedLog {
     };
 }
 export interface DodgePerformedLog {
-    type: "DodgePerformed";
+    type: 'DodgePerformed';
     data: {
         dodgerId: string;
     };
 }
 export interface BuffAppliedLog {
-    type: "BuffApplied";
+    type: 'BuffApplied';
     data: {
         charId: string;
         buffName: string;
@@ -89,7 +92,7 @@ export interface BuffAppliedLog {
     };
 }
 export interface BuffExpiredLog {
-    type: "BuffExpired";
+    type: 'BuffExpired';
     data: {
         charId: string;
         buffName: string;
@@ -97,7 +100,7 @@ export interface BuffExpiredLog {
     };
 }
 export interface HealthUpdateLog {
-    type: "HealthUpdate";
+    type: 'HealthUpdate';
     data: {
         charId: string;
         currentHealth: number;
@@ -105,35 +108,35 @@ export interface HealthUpdateLog {
     };
 }
 export interface CharacterDiedLog {
-    type: "CharacterDied";
+    type: 'CharacterDied';
     data: {
         charId: string;
         killerId: string;
     };
 }
 export interface StatChangedLog {
-    type: "StatChanged";
+    type: 'StatChanged';
     data: {
         charId: string;
         newStat: StatRecord;
     };
 }
 export interface AuraChangedLog {
-    type: "AuraUpdate";
+    type: 'AuraUpdate';
     data: {
         charId: string;
         auras: AuraSnapshot[];
     };
 }
 export interface StatusChangedLog {
-    type: "StatusUpdate";
+    type: 'StatusUpdate';
     data: {
         charId: string;
         statuses: StatusSnapshot[];
     };
 }
 export interface AnimationPerformedLog {
-    type: "AnimationPerformed";
+    type: 'AnimationPerformed';
     data: {
         animationVFX: AnimationVFX;
         sourceId: string;
