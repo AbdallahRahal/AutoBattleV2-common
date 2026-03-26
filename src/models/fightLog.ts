@@ -54,6 +54,7 @@ export type CombatLog =
     | StatChangedLog
     | AuraChangedLog
     | StatusChangedLog
+    | InterTurnUpdateLog
     | AnimationPerformedLog;
 
 // === FIGHT DATA ===
@@ -80,6 +81,16 @@ export interface AttackPerformedLog {
         targetId: string[];
         spellName: string;
         timestamp: number;
+    };
+}
+
+export interface InterTurnUpdateLog {
+    type: 'InterTurnUpdate';
+    data: {
+        interTurnUpdate: {
+            fighterId: string;
+            turnProgressPercent: number;
+        }[];
     };
 }
 

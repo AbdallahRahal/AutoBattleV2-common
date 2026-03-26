@@ -34,7 +34,7 @@ export interface FighterState {
     turnProgressPercent: number;
     invocations: FighterState[];
 }
-export type CombatLog = FightDataLog | SpellPerformedLog | AttackPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | HealthUpdateLog | CharacterDiedLog | StatChangedLog | AuraChangedLog | StatusChangedLog | AnimationPerformedLog;
+export type CombatLog = FightDataLog | SpellPerformedLog | AttackPerformedLog | DamageDealtLog | HealPerformedLog | DodgePerformedLog | HealthUpdateLog | CharacterDiedLog | StatChangedLog | AuraChangedLog | StatusChangedLog | InterTurnUpdateLog | AnimationPerformedLog;
 export interface FightDataLog {
     type: 'FightData';
     data: FightState;
@@ -55,6 +55,15 @@ export interface AttackPerformedLog {
         targetId: string[];
         spellName: string;
         timestamp: number;
+    };
+}
+export interface InterTurnUpdateLog {
+    type: 'InterTurnUpdate';
+    data: {
+        interTurnUpdate: {
+            fighterId: string;
+            turnProgressPercent: number;
+        }[];
     };
 }
 export interface DamageDealtLog {
