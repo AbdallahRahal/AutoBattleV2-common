@@ -5,6 +5,4 @@ export enum StatusType {
 
 export interface StatusSnapshot {
     type: StatusType;
-    applicationTimestamp: number;
-    expirationTimestamp: number;
 }
