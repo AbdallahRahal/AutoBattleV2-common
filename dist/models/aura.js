@@ -22,7 +22,6 @@ var AURA_IDS;
     AURA_IDS["Virevolte_Stack"] = "Virevolte_Stack";
     AURA_IDS["Virevolte_Dodge_Buff"] = "Virevolte_Dodge_Buff";
     AURA_IDS["Virevolte_Conversion"] = "Virevolte_Conversion";
-    AURA_IDS["Renouveau"] = "Renouveau";
     AURA_IDS["Paralysie"] = "Paralysie";
     AURA_IDS["Frenesie"] = "Frenesie";
     AURA_IDS["Frenesie_Saignement"] = "Frenesie_Saignement";
