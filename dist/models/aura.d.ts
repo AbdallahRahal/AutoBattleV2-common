@@ -39,6 +39,8 @@ export declare enum AURA_IDS {
     BenedictionDesAnciens = "BenedictionDesAnciens",
     Affutage = "Affutage",
     Gel = "Gel",
+    /** Après freeze à 100 cumuls : empêche de regagner des cumuls de gel pendant quelques tours */
+    GelImmunity = "GelImmunity",
     Fragilite = "Fragilite",
     CadenceMystique = "CadenceMystique"
 }
