@@ -42,5 +42,7 @@ export declare enum AURA_IDS {
     /** Après freeze à 100 cumuls : empêche de regagner des cumuls de gel pendant quelques tours */
     GelImmunity = "GelImmunity",
     Fragilite = "Fragilite",
-    CadenceMystique = "CadenceMystique"
+    CadenceMystique = "CadenceMystique",
+    TirMortel_CritPowerBuff = "TirMortel_CritPowerBuff",
+    Stigmates_LuckyHitBuff = "Stigmates_LuckyHitBuff"
 }

@@ -36,4 +36,6 @@ var AURA_IDS;
     AURA_IDS["GelImmunity"] = "GelImmunity";
     AURA_IDS["Fragilite"] = "Fragilite";
     AURA_IDS["CadenceMystique"] = "CadenceMystique";
+    AURA_IDS["TirMortel_CritPowerBuff"] = "TirMortel_CritPowerBuff";
+    AURA_IDS["Stigmates_LuckyHitBuff"] = "Stigmates_LuckyHitBuff";
 })(AURA_IDS || (exports.AURA_IDS = AURA_IDS = {}));

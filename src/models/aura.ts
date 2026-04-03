@@ -50,4 +50,6 @@ export enum AURA_IDS {
     GelImmunity = 'GelImmunity',
     Fragilite = 'Fragilite',
     CadenceMystique = 'CadenceMystique',
+    TirMortel_CritPowerBuff = 'TirMortel_CritPowerBuff',
+    Stigmates_LuckyHitBuff = 'Stigmates_LuckyHitBuff',
 }
