@@ -8,7 +8,6 @@ var AURA_IDS;
     AURA_IDS["DanseDesOmbres_Buff"] = "DanseDesOmbres_Buff";
     AURA_IDS["DrainSpirituel_Buff"] = "DrainSpirituel_Buff";
     AURA_IDS["DrainSpirituel_Debuff"] = "DrainSpirituel_Debuff";
-    AURA_IDS["Fracture_Debuff"] = "Fracture_Debuff";
     AURA_IDS["BrulureSacree_Marque"] = "BrulureSacree_Marque";
     AURA_IDS["Spoliation_Buff"] = "Spoliation_Buff";
     AURA_IDS["Spoliation_Debuff"] = "Spoliation_Debuff";

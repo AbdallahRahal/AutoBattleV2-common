@@ -15,7 +15,6 @@ export declare enum AURA_IDS {
     DanseDesOmbres_Buff = "DanseDesOmbres_Buff",
     DrainSpirituel_Buff = "DrainSpirituel_Buff",
     DrainSpirituel_Debuff = "DrainSpirituel_Debuff",
-    Fracture_Debuff = "Fracture_Debuff",
     BrulureSacree_Marque = "BrulureSacree_Marque",
     Spoliation_Buff = "Spoliation_Buff",
     Spoliation_Debuff = "Spoliation_Debuff",
