@@ -13,4 +13,5 @@ var AnimationVFX;
     AnimationVFX["RESONANCE"] = "RESONANCE";
     AnimationVFX["CHATIMENT_LUMINEUX"] = "CHATIMENT_LUMINEUX";
     AnimationVFX["STIGMATES"] = "STIGMATES";
+    AnimationVFX["LAMES_JUMELLES"] = "LAMES_JUMELLES";
 })(AnimationVFX || (exports.AnimationVFX = AnimationVFX = {}));
