@@ -9,6 +9,7 @@ export type FightType =
     | 'TOURNAMENT'
     | 'MERCHANTFIGHT'
     | 'DEFI'
+    | 'ADVENTURE'
     | 'STATISTICS';
 
 export interface Fight {
@@ -25,6 +26,7 @@ export interface Fight {
     background: string;
     discordServerId?: string;
     raidLevel?: number;
+    adventureLevel?: number;
     fightLog?: { dateTime: number; combatLog: CombatLog }[] | string;
     finalFightState?: FightState;
     type: FightType;

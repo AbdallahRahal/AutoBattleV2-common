@@ -33,6 +33,7 @@ __exportStar(require("./relic"), exports);
 __exportStar(require("./aura"), exports);
 __exportStar(require("./status"), exports);
 __exportStar(require("./defi"), exports);
+__exportStar(require("./adventure"), exports);
 __exportStar(require("./classItemRules"), exports);
 __exportStar(require("./vote"), exports);
 __exportStar(require("./lineContext"), exports);
