@@ -1,3 +1,4 @@
+import { Character } from "./character";
 import { Fight, FightTeam } from "./fight";
 
 export interface AdventureProgress {
@@ -29,4 +30,5 @@ export interface AdventureTimelineResponse {
     progress: AdventureProgress | null;
     nextLevel: AdventureLevelConfig | null;
     recentFights: Fight[];
+    teamMembers: Character[];
 }

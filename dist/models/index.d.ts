@@ -5,6 +5,7 @@ export * from "./notification";
 export * from "./character";
 export * from "./fight";
 export * from "./item";
+export * from "./adventureItem";
 export * from "./stat";
 export * from "./leveling";
 export * from "./tournament";

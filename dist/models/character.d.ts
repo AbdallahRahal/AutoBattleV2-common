@@ -1,3 +1,4 @@
+import { AdventureItem } from './adventureItem';
 import { Item } from './item';
 import { StatAllocationPointDistribution, StatRecord } from './stat';
 export declare enum ClassName {
@@ -58,5 +59,11 @@ export interface Character {
     hasFullRerolled: boolean;
     pendingFullRerollItems?: Item[];
     rerolledFullRerollIndices?: number[];
+    computedStatsAdventure: StatRecord;
+    computedClassAdventure: ClassRecord;
+    adventureInventory: AdventureItem[];
+    adventureSlotChest?: AdventureItem | null;
+    adventureSlotHead?: AdventureItem | null;
+    adventureSlotRing?: AdventureItem | null;
 }
 export type ClassAllocationPointDistribution = Record<ClassName, number>;
