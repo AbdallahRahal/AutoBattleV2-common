@@ -84,9 +84,9 @@ export interface Character {
     pendingFullRerollItems?: Item[];
     rerolledFullRerollIndices?: number[];
 
-    computedStatsAdventure: StatRecord;
-    computedClassAdventure: ClassRecord;
-    adventureInventory: AdventureItem[];
+    computedStatsAdventure?: StatRecord;
+    computedClassAdventure?: ClassRecord;
+    adventureInventory?: AdventureItem[];
     adventureSlotChest?: AdventureItem | null;
     adventureSlotHead?: AdventureItem | null;
     adventureSlotRing?: AdventureItem | null;
