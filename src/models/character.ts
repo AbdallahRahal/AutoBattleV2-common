@@ -81,6 +81,7 @@ export interface Character {
 
     hasFullRerolled: boolean;
     pendingFullRerollItems?: Item[];
+    rerolledFullRerollIndices?: number[];
 }
 
 export type ClassAllocationPointDistribution = Record<ClassName, number>;

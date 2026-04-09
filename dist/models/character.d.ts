@@ -57,5 +57,6 @@ export interface Character {
     eloRating: number;
     hasFullRerolled: boolean;
     pendingFullRerollItems?: Item[];
+    rerolledFullRerollIndices?: number[];
 }
 export type ClassAllocationPointDistribution = Record<ClassName, number>;
