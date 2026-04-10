@@ -1,5 +1,5 @@
 import { Character } from "./character";
-import { Fight, FightTeam } from "./fight";
+import { FightTeam } from "./fight";
 
 export interface AdventureProgress {
     teamId: string;
@@ -29,6 +29,6 @@ export interface AdventureLeaderboardEntry {
 export interface AdventureTimelineResponse {
     progress: AdventureProgress | null;
     nextLevel: AdventureLevelConfig | null;
-    recentFights: Fight[];
     teamMembers: Character[];
+    isLooping: boolean;
 }
