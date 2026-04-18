@@ -3,7 +3,7 @@ export type ChatMessage = {
     content: string;
     authorId: string;
     authorName: string;
-    channel: 'global';
+    channel: 'global' | `team:${string}`;
     createdAt: string;
     updatedAt: string;
 };
