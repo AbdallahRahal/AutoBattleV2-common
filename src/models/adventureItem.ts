@@ -8,4 +8,5 @@ export interface AdventureItem extends Item {
     slot: AdventureSlot;
     rarity: AdventureItemRarity;
     level: number;
+    createdAt?: string;
 }

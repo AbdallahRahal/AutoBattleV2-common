@@ -1,3 +1,4 @@
+import { AdventureItem } from "./adventureItem";
 import { Character } from "./character";
 import { FightTeam } from "./fight";
 export interface AdventureProgress {
@@ -31,4 +32,15 @@ export interface AdventureTimelineResponse {
     nextLevel: AdventureLevelConfig | null;
     teamMembers: Character[];
     isLooping: boolean;
+}
+export interface AdventureRecapContribution {
+    characterId: string;
+    characterName: string;
+    levelsWon: number;
+}
+export interface AdventureRecapResponse {
+    hasNewContent: boolean;
+    contributions: AdventureRecapContribution[];
+    myNewItems: AdventureItem[];
+    totalNewLevels: number;
 }
