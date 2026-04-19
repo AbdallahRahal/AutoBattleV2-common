@@ -90,6 +90,7 @@ export interface Character {
     adventureSlotChest?: AdventureItem | null;
     adventureSlotHead?: AdventureItem | null;
     adventureSlotRing?: AdventureItem | null;
+    adventureClearedLevels?: number[];
 }
 
 export type ClassAllocationPointDistribution = Record<ClassName, number>;
