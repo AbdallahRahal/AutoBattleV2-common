@@ -1,12 +1,11 @@
-import { Item } from './item';
+import { Item, ItemRarity } from './item';
 
 export type AdventureSlot = 'chest' | 'head' | 'ring';
 
-export type AdventureItemRarity = 'common' | 'rare' | 'epic' | 'legendary';
+export type AdventureItemRarity = ItemRarity;
 
 export interface AdventureItem extends Item {
     slot: AdventureSlot;
-    rarity: AdventureItemRarity;
     level: number;
     createdAt?: string;
 }

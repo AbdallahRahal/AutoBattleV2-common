@@ -10,6 +10,7 @@ export declare enum SpellTag {
     BUFF = "buff",
     DEBUFF = "debuff"
 }
+export type ItemRarity = 'common' | 'rare' | 'epic' | 'legendary';
 export interface Item {
     id: string;
     name: string;
@@ -25,4 +26,5 @@ export interface Item {
     icon: string;
     tags: SpellTag[];
     rank: number;
+    rarity: ItemRarity;
 }
