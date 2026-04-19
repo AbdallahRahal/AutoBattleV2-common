@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SpellTag = void 0;
+exports.ItemRarity = exports.SpellTag = void 0;
 var SpellTag;
 (function (SpellTag) {
     SpellTag["ACTIVE"] = "active";
@@ -12,3 +12,10 @@ var SpellTag;
     SpellTag["BUFF"] = "buff";
     SpellTag["DEBUFF"] = "debuff";
 })(SpellTag || (exports.SpellTag = SpellTag = {}));
+var ItemRarity;
+(function (ItemRarity) {
+    ItemRarity["COMMON"] = "common";
+    ItemRarity["RARE"] = "rare";
+    ItemRarity["EPIC"] = "epic";
+    ItemRarity["LEGENDARY"] = "legendary";
+})(ItemRarity || (exports.ItemRarity = ItemRarity = {}));
