@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getXpToNextLevel = exports.getXpForLevel = exports.totalXpCaps = exports.LEVEL_EXPERIENCE_TABLE = void 0;
+exports.totalXpCaps = exports.LEVEL_EXPERIENCE_TABLE = void 0;
+exports.getXpForLevel = getXpForLevel;
+exports.getXpToNextLevel = getXpToNextLevel;
 // Tableau XP statique pour chaque niveau jusqu'au niveau 20
 // [niveau] = XP nécessaire pour atteindre ce niveau
 exports.LEVEL_EXPERIENCE_TABLE = [
@@ -32,10 +34,8 @@ function getXpForLevel(level) {
     }
     return exports.LEVEL_EXPERIENCE_TABLE[level];
 }
-exports.getXpForLevel = getXpForLevel;
 // Calculer combien d'xp il faut encore pour le prochain niveau
 function getXpToNextLevel(currentLevel, currentExperience) {
     const nextLevelXp = getXpForLevel(currentLevel + 1);
     return Math.max(0, nextLevelXp - currentExperience);
 }
-exports.getXpToNextLevel = getXpToNextLevel;
