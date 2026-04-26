@@ -1,39 +1,47 @@
 {
-  "name": "@autobattle/common",
-  "version": "1.0.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+    "name": "@autobattle/common",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "prepare": "npm run build",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "./models": {
-      "import": "./dist/models/index.js",
-      "require": "./dist/models/index.js",
-      "types": "./dist/models/index.d.ts"
+    "files": [
+        "dist"
+    ],
+    "devDependencies": {
+        "typescript": "^5.9.2"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        },
+        "./models": {
+            "import": "./dist/models/index.js",
+            "require": "./dist/models/index.js",
+            "types": "./dist/models/index.d.ts"
+        }
+    },
+    "typesVersions": {
+        "*": {
+            "models": [
+                "dist/models/index.d.ts"
+            ],
+            "mappers": [
+                "dist/mappers/index.d.ts"
+            ],
+            "*": [
+                "dist/index.d.ts"
+            ]
+        }
     }
-  },
-  "typesVersions": {
-    "*": {
-      "models": [
-        "dist/models/index.d.ts"
-      ],
-      "mappers": [
-        "dist/mappers/index.d.ts"
-      ],
-      "*": [
-        "dist/index.d.ts"
-      ]
-    }
-  }
 }

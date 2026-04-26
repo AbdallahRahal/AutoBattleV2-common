@@ -91,6 +91,10 @@ export interface Character {
     adventureSlotHead?: AdventureItem | null;
     adventureSlotRing?: AdventureItem | null;
     adventureClearedLevels?: number[];
+    adventureItems?: Item[];
+    adventureItemChoice?: Record<string, Item[]>;
+
+    khaldraHeartSpellIdList?: number[];
 }
 
 export type ClassAllocationPointDistribution = Record<ClassName, number>;

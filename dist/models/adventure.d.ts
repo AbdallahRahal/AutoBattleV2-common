@@ -38,6 +38,10 @@ export interface AdventureRecapContribution {
     characterName: string;
     levelsWon: number;
 }
+/** Niveaux d'aventure qui déclenchent un choix d'item classique. */
+export declare const ADVENTURE_ITEM_CHOICE_LEVELS: number[];
+/** Feature flag : mettre à true pour activer les items d'aventure classiques. */
+export declare const ADVENTURE_CLASSIC_ITEMS_ENABLED = false;
 export interface AdventureRecapResponse {
     hasNewContent: boolean;
     contributions: AdventureRecapContribution[];
