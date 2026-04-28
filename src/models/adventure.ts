@@ -29,7 +29,6 @@ export interface AdventureLeaderboardEntry {
 
 export interface AdventureTimelineResponse {
     progress: AdventureProgress | null;
-    nextLevel: AdventureLevelConfig | null;
     teamMembers: Character[];
     isLooping: boolean;
 }
