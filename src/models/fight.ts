@@ -38,3 +38,10 @@ export interface FightTeam {
     teamId: string;
     members: Character[];
 }
+
+export interface PaginatedFights {
+    data: Fight[];
+    total: number;
+    page: number;
+    totalPages: number;
+}

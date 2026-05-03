@@ -23,3 +23,4 @@ export * from "./classItemRules";
 export * from "./vote";
 export * from "./lineContext";
 export * from "./khaldraHeart";
+export * from "./spellConstants";

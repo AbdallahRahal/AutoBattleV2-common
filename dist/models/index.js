@@ -39,3 +39,4 @@ __exportStar(require("./classItemRules"), exports);
 __exportStar(require("./vote"), exports);
 __exportStar(require("./lineContext"), exports);
 __exportStar(require("./khaldraHeart"), exports);
+__exportStar(require("./spellConstants"), exports);
