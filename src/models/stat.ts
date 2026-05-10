@@ -45,10 +45,10 @@ export const allocationPointValue: Partial<Record<MainStatKey, number>> = {
     MaxLifePointMultiplier: 0.025,
     Power: 2,
     Haste: 1,
-    Dodge: 1.5,
+    Dodge: 1,
     CritChance: 1,
     CritPower: 1,
-    Resistance: 1.5,
+    Resistance: 1,
     LuckyHit: 1,
 };
 
